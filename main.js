@@ -70,6 +70,43 @@ Vue.component('filter-form', {
 	}
 })
 
+Vue.component('filtered-list', {
+	props: {
+		filteredSongs: {
+		}
+	},
+	template: `
+		<table>
+			<tr>
+				<th style="min-width:80px">Code</th>
+				<th style="min-width:250px">歌名</th>
+				<th style="width:60%">第一句</th>
+				<th>Remark</th>
+				<th style="min-width:70px">歌名字數</th>
+			</tr>
+			<tr v-for="song in filteredResults" :key="song.code">
+				<td>{{ song.code }}</td>
+				<td>{{ song.name }}</td>
+				<td>{{ song.firstLine }}</td>
+				<td>{{ song.remark }}</td>
+				<td>{{ song.name.length }}</td>
+			</tr>
+		</table>
+	`,
+	data() {
+		return {
+		}
+	},
+	methods: {
+	},
+	computed: {
+		filteredResults() {
+			return this.filteredSongs
+		}
+	}
+	
+})
+
 var app = new Vue({
 	el: '#app',
 	mounted:function(){
@@ -82,44 +119,10 @@ var app = new Vue({
 		
 		this.search(searchTerms) //search will execute at pageload
 	},
-	methods: {
-		search(searchTerms) {
-			this.filteredSongs = []
-			for (i = 0; i < this.songs.length; i++) {
-				if (searchTerms.searchCode && searchTerms.searchCode != this.songs[i].code) {
-					// searchCode not matched
-					continue
-				}
-				
-				if (searchTerms.stroke && searchTerms.stroke != this.songs[i].stroke) {
-					// stroke not matched
-					continue
-				}
-				
-				if (searchTerms.nameLength && searchTerms.nameLength != this.songs[i].name.length) {
-					// name length not matched
-					continue
-				}
-				
-				if (searchTerms.wordContains) {
-					var searchWord = searchTerms.wordContains.toLowerCase()
-					if (!this.songs[i].name.toLowerCase().includes(searchWord) && !this.songs[i].firstLine.toLowerCase().includes(searchWord) && !this.songs[i].remark.toLowerCase().includes(searchWord)) {
-						// wordContains not matched
-						continue
-					}
-				}
-				
-				this.filteredSongs.push(this.songs[i])
-			}
-		},
-		scrollToTop() {
-			window.scrollTo(0,0);
-	   },
-	},
 	data: {
-		filteredSongs: [],
 		worship: '迦琳基督教會祟拜詩歌',
 		image: './images/Cross.jpg',
+		filteredSongs: [],
 		songs: [
 			{
 				code: '1-Y0101',
@@ -127,7 +130,7 @@ var app = new Vue({
 				firstLine: '有一件禮物你收到沒有',
 				remark: '',
 				stroke: 1,
-				key: '',
+				key: 'C',
 				link: '',
 				lyrics: ''
 			},
@@ -137,7 +140,7 @@ var app = new Vue({
 				firstLine: '牽我心牽我手',
 				remark: 'BY TTK',
 				stroke: 1,
-				key: '',
+				key: 'C',
 				link: '',
 				lyrics: ''
 			},
@@ -147,7 +150,7 @@ var app = new Vue({
 				firstLine: '為何忘掉那日',
 				remark: '',
 				stroke: 1,
-				key: '',
+				key: 'A',
 				link: '',
 				lyrics: ''
 			},
@@ -157,7 +160,7 @@ var app = new Vue({
 				firstLine: '親愛的寶貴耶穌',
 				remark: '',
 				stroke: 1,
-				key: '',
+				key: 'E',
 				link: '',
 				lyrics: ''
 			},
@@ -167,7 +170,7 @@ var app = new Vue({
 				firstLine: '讓那讚美的聲音',
 				remark: '',
 				stroke: 1,
-				key: '',
+				key: 'C',
 				link: '',
 				lyrics: ''
 			},
@@ -177,7 +180,7 @@ var app = new Vue({
 				firstLine: '主是何等的重要',
 				remark: '',
 				stroke: 1,
-				key: '',
+				key: 'D',
 				link: '',
 				lyrics: ''
 			},
@@ -187,7 +190,7 @@ var app = new Vue({
 				firstLine: '一粒麥子它若不落在地裡死了',
 				remark: '',
 				stroke: 1,
-				key: '',
+				key: 'Dm',
 				link: '',
 				lyrics: ''
 			},
@@ -197,7 +200,7 @@ var app = new Vue({
 				firstLine: '主我來就十字架',
 				remark: '副歌：十字架十字架',
 				stroke: 2,
-				key: '',
+				key: 'F',
 				link: '',
 				lyrics: ''
 			},
@@ -207,7 +210,7 @@ var app = new Vue({
 				firstLine: '凝望祢十架的背後',
 				remark: 'BY TTK',
 				stroke: 2,
-				key: '',
+				key: 'D',
 				link: '',
 				lyrics: ''
 			},
@@ -217,7 +220,7 @@ var app = new Vue({
 				firstLine: '路是難走',
 				remark: '',
 				stroke: 2,
-				key: '',
+				key: 'G',
 				link: '',
 				lyrics: ''
 			},
@@ -227,7 +230,7 @@ var app = new Vue({
 				firstLine: '',
 				remark: '',
 				stroke: 2,
-				key: '',
+				key: 'G',
 				link: '',
 				lyrics: ''
 			},
@@ -237,7 +240,7 @@ var app = new Vue({
 				firstLine: '謙卑的君王榮耀的君王',
 				remark: '',
 				stroke: 2,
-				key: '',
+				key: 'D',
 				link: '',
 				lyrics: ''
 			},
@@ -247,7 +250,7 @@ var app = new Vue({
 				firstLine: '人算什麼你竟看顧',
 				remark: '',
 				stroke: 2,
-				key: '',
+				key: 'C',
 				link: '',
 				lyrics: ''
 			},
@@ -257,7 +260,7 @@ var app = new Vue({
 				firstLine: '耶和華我們的主',
 				remark: '',
 				stroke: 2,
-				key: '',
+				key: 'D',
 				link: '',
 				lyrics: ''
 			},
@@ -267,7 +270,7 @@ var app = new Vue({
 				firstLine: '信是未曾看見',
 				remark: '',
 				stroke: 3,
-				key: '',
+				key: 'G',
 				link: '',
 				lyrics: ''
 			},
@@ -277,7 +280,7 @@ var app = new Vue({
 				firstLine: '凡事謙虛溫柔忍耐',
 				remark: '',
 				stroke: 3,
-				key: '',
+				key: 'F',
 				link: '',
 				lyrics: ''
 			},
@@ -287,7 +290,7 @@ var app = new Vue({
 				firstLine: '獻上一生為祢而活',
 				remark: '',
 				stroke: 3,
-				key: '',
+				key: 'G',
 				link: '',
 				lyrics: ''
 			},
@@ -297,7 +300,7 @@ var app = new Vue({
 				firstLine: '三一神我要深愛你',
 				remark: '',
 				stroke: 3,
-				key: '',
+				key: 'G',
 				link: '',
 				lyrics: ''
 			},
@@ -307,7 +310,7 @@ var app = new Vue({
 				firstLine: '誰了解此時我心正淚流像火燙',
 				remark: '',
 				stroke: 3,
-				key: '',
+				key: 'Gm',
 				link: '',
 				lyrics: ''
 			},
@@ -317,7 +320,7 @@ var app = new Vue({
 				firstLine: '耶穌一見你寶貝就歡笑',
 				remark: '',
 				stroke: 3,
-				key: '',
+				key: 'E',
 				link: '',
 				lyrics: ''
 			},
@@ -1037,7 +1040,7 @@ var app = new Vue({
 				firstLine: '以色列的聖者 為我犧牲自己',
 				remark: '',
 				stroke: 5,
-				key: '',
+				key: 'G',
 				link: '',
 				lyrics: ''
 			},
@@ -1097,7 +1100,7 @@ var app = new Vue({
 				firstLine: '耶穌 我救主 你至聖有誰能比',
 				remark: '',
 				stroke: 6,
-				key: '',
+				key: 'A',
 				link: '',
 				lyrics: ''
 			},
@@ -1227,7 +1230,7 @@ var app = new Vue({
 				firstLine: '當讚美的旋律響起',
 				remark: '',
 				stroke: 6,
-				key: '',
+				key: 'D',
 				link: '',
 				lyrics: ''
 			},
@@ -1267,7 +1270,7 @@ var app = new Vue({
 				firstLine: '全能上帝是我的主我的神',
 				remark: '',
 				stroke: 6,
-				key: '',
+				key: 'A',
 				link: '',
 				lyrics: ''
 			},
@@ -1367,7 +1370,7 @@ var app = new Vue({
 				firstLine: '造物主 今高唱祢名字',
 				remark: '',
 				stroke: 6,
-				key: '',
+				key: 'A',
 				link: '',
 				lyrics: ''
 			},
@@ -1467,7 +1470,7 @@ var app = new Vue({
 				firstLine: '在天上的爸爸 願人人都尊你名為聖',
 				remark: '',
 				stroke: 6,
-				key: '',
+				key: 'G',
 				link: '',
 				lyrics: ''
 			},
@@ -1837,7 +1840,7 @@ var app = new Vue({
 				firstLine: '我一切的好處在主裡面',
 				remark: '',
 				stroke: 7,
-				key: '',
+				key: 'A',
 				link: '',
 				lyrics: ''
 			},
@@ -1857,7 +1860,7 @@ var app = new Vue({
 				firstLine: '你們要讚美耶和華 在祂的聖所讚美祂',
 				remark: '',
 				stroke: 7,
-				key: '',
+				key: 'F',
 				link: '',
 				lyrics: ''
 			},
@@ -2347,7 +2350,7 @@ var app = new Vue({
 				firstLine: '求祢降下同在',
 				remark: '',
 				stroke: 7,
-				key: '',
+				key: 'C',
 				link: '',
 				lyrics: ''
 			},
@@ -2587,7 +2590,7 @@ var app = new Vue({
 				firstLine: '榮耀歸於你權柄歸於你',
 				remark: '',
 				stroke: 8,
-				key: '',
+				key: 'F',
 				link: '',
 				lyrics: ''
 			},
@@ -3387,7 +3390,7 @@ var app = new Vue({
 				firstLine: '',
 				remark: '',
 				stroke: 10,
-				key: '',
+				key: 'C',
 				link: '',
 				lyrics: ''
 			},
@@ -3677,7 +3680,7 @@ var app = new Vue({
 				firstLine: '神願你來陶造我',
 				remark: '',
 				stroke: 11,
-				key: '',
+				key: 'Dm',
 				link: '',
 				lyrics: ''
 			},
@@ -4057,7 +4060,7 @@ var app = new Vue({
 				firstLine: '當聖靈在我心 我要歌頌主',
 				remark: '',
 				stroke: 13,
-				key: '',
+				key: 'G',
 				link: '',
 				lyrics: ''
 			},
@@ -4917,7 +4920,7 @@ var app = new Vue({
 				firstLine: '聽啊以色列',
 				remark: '',
 				stroke: 22,
-				key: '',
+				key: 'G',
 				link: '',
 				lyrics: ''
 			},
@@ -5082,5 +5085,40 @@ var app = new Vue({
 				lyrics: ''
 			},
 		],
-	}
+	},
+	methods: {
+		search(searchTerms) {
+			console.log("component search")
+			this.filteredSongs = []
+			for (i = 0; i < this.songs.length; i++) {
+				if (searchTerms.searchCode && searchTerms.searchCode != this.songs[i].code) {
+					// searchCode not matched
+					continue
+				}
+				
+				if (searchTerms.stroke && searchTerms.stroke != this.songs[i].stroke) {
+					// stroke not matched
+					continue
+				}
+				
+				if (searchTerms.nameLength && searchTerms.nameLength != this.songs[i].name.length) {
+					// name length not matched
+					continue
+				}
+				
+				if (searchTerms.wordContains) {
+					var searchWord = searchTerms.wordContains.toLowerCase()
+					if (!this.songs[i].name.toLowerCase().includes(searchWord) && !this.songs[i].firstLine.toLowerCase().includes(searchWord) && !this.songs[i].remark.toLowerCase().includes(searchWord)) {
+						// wordContains not matched
+						continue
+					}
+				}
+				
+				this.filteredSongs.push(this.songs[i])
+			}
+		},
+		scrollToTop() {
+			window.scrollTo(0,0);
+		},
+	},
 })

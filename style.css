@@ -28,3 +28,11 @@ table {
 	background-color: #e8f25e; /* Yellow */
 	color: #000000; /* Black */
 }
+
+label {
+	font-size: 20px;
+}
+
+input, select {
+	height: 30px
+}
