@@ -1,0 +1,57 @@
+﻿<html>
+	<head>
+		<title>Worship</title>
+		<link rel="stylesheet" type="text/css" href="style.css"></link>
+	</head>
+	<body>
+		<div class="nav-bar"></div>
+		
+		<div id="app">
+			<div class="worship">
+			
+				<div class="worship-info">
+					<h1>{{ worship }}</h1>
+				</div>
+				
+				<div class="worship-image">
+					<img :src="image"></img>
+				</div>
+				
+				<filter-form @search-terms-entered="search"></filter-form>
+				
+				<div class="updated-info">
+					<h2>Last updated: 31/08/2019</h2>
+				</div>
+				
+				<div class="filtered-songs">
+					<table>
+						<tr>
+							<th style="min-width:80px">Code</th>
+							<th style="min-width:250px">歌名</th>
+							<th style="width:60%">第一句</th>
+							<th>Remark</th>
+							<th style="min-width:70px">歌名字數</th>
+						</tr>
+						<tr v-for="song in filteredSongs" :key="song.code">
+							<td>{{ song.code }}</td>
+							<td>{{ song.name }}</td>
+							<td>{{ song.firstLine }}</td>
+							<td>{{ song.remark }}</td>
+							<td>{{ song.name.length }}</td>
+						</tr>
+					</table>
+				</div>
+				
+				<br />
+				
+				<div class="back-to-top">
+					<button type="button" @click="scrollToTop">Back to top</button>
+				</div>
+				
+			</div>
+		</div>
+		
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+		<script src="main.js"></script>
+	</body>
+</html>
