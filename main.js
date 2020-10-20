@@ -86,7 +86,10 @@ Vue.component('filtered-list', {
 			</tr>
 			<tr v-for="song in filteredResults" :key="song.code">
 				<td>{{ song.code }}</td>
-				<td>{{ song.name }}</td>
+				<td>
+					<a v-if="song.link" :href="song.link">{{ song.name }}</a>
+					<p v-else>{{ song.name }}</p>
+				</td>
 				<td>{{ song.firstLine }}</td>
 				<td>{{ song.remark }}</td>
 				<td>{{ song.name.length }}</td>
@@ -4916,12 +4919,12 @@ var app = new Vue({
 			},
 			{
 				code: '22-T0101',
-				name: '聽啊 以色列',
+				name: '聽啊以色列',
 				firstLine: '聽啊以色列',
 				remark: '',
 				stroke: 22,
 				key: 'G',
-				link: '',
+				link: 'images/chords/聽啊以色列.jpeg',
 				lyrics: ''
 			},
 			{
@@ -5088,7 +5091,6 @@ var app = new Vue({
 	},
 	methods: {
 		search(searchTerms) {
-			console.log("component search")
 			this.filteredSongs = []
 			for (i = 0; i < this.songs.length; i++) {
 				if (searchTerms.searchCode && searchTerms.searchCode != this.songs[i].code) {
