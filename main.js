@@ -1044,7 +1044,7 @@ var app = new Vue({
 				remark: '',
 				stroke: 5,
 				key: 'G',
-				link: '',
+				link: './images/chords/以色列的聖者.jpeg',
 				lyrics: ''
 			},
 			{
@@ -4924,7 +4924,7 @@ var app = new Vue({
 				remark: '',
 				stroke: 22,
 				key: 'G',
-				link: 'images/chords/聽啊以色列.jpeg',
+				link: './images/chords/聽啊以色列.jpeg',
 				lyrics: ''
 			},
 			{
