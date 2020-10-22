@@ -1234,7 +1234,7 @@ var app = new Vue({
 				remark: '',
 				stroke: 6,
 				key: 'D',
-				link: '',
+				link: './images/chords/全然向你.jpeg',
 				lyrics: ''
 			},
 			{
@@ -1374,7 +1374,7 @@ var app = new Vue({
 				remark: '',
 				stroke: 6,
 				key: 'A',
-				link: '',
+				link: './images/chords/因主的名.jpeg',
 				lyrics: ''
 			},
 			{
@@ -1474,7 +1474,7 @@ var app = new Vue({
 				remark: '',
 				stroke: 6,
 				key: 'G',
-				link: '',
+				link: './images/chords/在天上的爸爸.jpeg',
 				lyrics: ''
 			},
 			{
@@ -2354,7 +2354,7 @@ var app = new Vue({
 				remark: '',
 				stroke: 7,
 				key: 'C',
-				link: '',
+				link: './images/chords/我要看見.jpeg',
 				lyrics: ''
 			},
 			{
@@ -4059,12 +4059,12 @@ var app = new Vue({
 			},
 			{
 				code: '13-D0102',
-				name: '當聖靈在我心',
-				firstLine: '當聖靈在我心 我要歌頌主',
+				name: '當聖靈在我的心',
+				firstLine: '當聖靈在我的心 我要歌頌主',
 				remark: '',
 				stroke: 13,
 				key: 'G',
-				link: '',
+				link: './images/chords/當聖靈在我的心.jpeg',
 				lyrics: ''
 			},
 			{
