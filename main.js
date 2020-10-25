@@ -259,7 +259,7 @@ var app = new Vue({
 			},
 			{
 				code: '2-Y0102',
-				name: '人算什麼',
+				name: '人算甚麼',
 				firstLine: '耶和華我們的主',
 				remark: '',
 				stroke: 2,
@@ -401,7 +401,7 @@ var app = new Vue({
 				code: '4-T0104',
 				name: '天使高唱在高天',
 				firstLine: '天使歌唱在高天',
-				remark: '',
+				remark: ' 聖誕用',
 				stroke: 4,
 				key: '',
 				link: '',
@@ -451,7 +451,7 @@ var app = new Vue({
 				code: '5-D0101',
 				name: '叮噹叮',
 				firstLine: '叮噹叮，叮噹叮，歌聲與鐘聲',
-				remark: '聖誕用',
+				remark: ' 聖誕用',
 				stroke: 5,
 				key: '',
 				link: '',
@@ -560,7 +560,7 @@ var app = new Vue({
 			{
 				code: '5-J0107',
 				name: '主是平安',
-				firstLine: '主是平安 祂已拆毁中間隔斷的牆',
+				firstLine: '主是平安 祂已拆祢中間隔斷的牆',
 				remark: '',
 				stroke: 5,
 				key: '',
@@ -799,7 +799,7 @@ var app = new Vue({
 			},
 			{
 				code: '5-J0131',
-				name: '主神啊!諸天被創造',
+				name: '主神啊諸天被創造',
 				firstLine: '主神啊!諸天被創造',
 				remark: '',
 				stroke: 5,
@@ -829,7 +829,7 @@ var app = new Vue({
 			},
 			{
 				code: '5-J0134',
-				name: '主啊!教我們禱告',
+				name: '主啊教我們禱告',
 				firstLine: '我們在天上的阿爸父',
 				remark: '',
 				stroke: 5,
@@ -851,56 +851,6 @@ var app = new Vue({
 				code: '5-J0136',
 				name: '主我心尋找祢',
 				firstLine: '主我心尋找祢',
-				remark: '',
-				stroke: 5,
-				key: '',
-				link: '',
-				lyrics: ''
-			},
-			{
-				code: '5-J0137',
-				name: '主的喜樂是我的力量',
-				firstLine: '耶和華的喜樂是我們的力量',
-				remark: '',
-				stroke: 5,
-				key: '',
-				link: '',
-				lyrics: ''
-			},
-			{
-				code: '5-J0138',
-				name: '主你永遠與我同在',
-				firstLine: '危難臨到我信靠你深知你必領我渡過',
-				remark: '',
-				stroke: 5,
-				key: '',
-				link: '',
-				lyrics: ''
-			},
-			{
-				code: '5-J0139',
-				name: '主禱文(請教導我們禱告)',
-				firstLine: '天父你名是多麼美榮耀遍全地',
-				remark: '',
-				stroke: 5,
-				key: '',
-				link: '',
-				lyrics: ''
-			},
-			{
-				code: '5-J0140',
-				name: '主恩實在更多',
-				firstLine: '我真希奇救主耶穌',
-				remark: '',
-				stroke: 5,
-				key: '',
-				link: '',
-				lyrics: ''
-			},
-			{
-				code: '5-J0141',
-				name: '主禱文',
-				firstLine: '我們在天上的父願人都尊你的名為聖',
 				remark: '',
 				stroke: 5,
 				key: '',
@@ -931,6 +881,56 @@ var app = new Vue({
 				code: '5-J0203',
 				name: '只向祂讚美',
 				firstLine: '我的心一生只向祂讚美',
+				remark: '',
+				stroke: 5,
+				key: '',
+				link: '',
+				lyrics: ''
+			},
+			{
+				code: '5-J0137',
+				name: '主的喜樂是我的力量',
+				firstLine: '耶和華的喜樂是我們的力量',
+				remark: '',
+				stroke: 5,
+				key: '',
+				link: '',
+				lyrics: ''
+			},
+			{
+				code: '5-J0138',
+				name: '主你永遠與我同在',
+				firstLine: '危難臨到我信靠你深知你必領我渡過',
+				remark: '',
+				stroke: 5,
+				key: '',
+				link: '',
+				lyrics: ''
+			},
+			{
+				code: '5-J0139',
+				name: '主禱文(請教導我們禱告)',
+				firstLine: '父你的名是多麼美榮耀遍全地',
+				remark: '',
+				stroke: 5,
+				key: '',
+				link: '',
+				lyrics: ''
+			},
+			{
+				code: '5-J0140',
+				name: '主恩實在更多',
+				firstLine: '我真希奇救主耶穌',
+				remark: '',
+				stroke: 5,
+				key: '',
+				link: '',
+				lyrics: ''
+			},
+			{
+				code: '5-J0141',
+				name: '主禱文',
+				firstLine: '我們在天上的父願人都尊你的名為聖',
 				remark: '',
 				stroke: 5,
 				key: '',
@@ -1044,7 +1044,7 @@ var app = new Vue({
 				remark: '',
 				stroke: 5,
 				key: 'G',
-				link: './images/chords/以色列的聖者.jpeg',
+				link: '',
 				lyrics: ''
 			},
 			{
@@ -1103,7 +1103,7 @@ var app = new Vue({
 				firstLine: '耶穌 我救主 你至聖有誰能比',
 				remark: '',
 				stroke: 6,
-				key: 'A',
+				key: '',
 				link: '',
 				lyrics: ''
 			},
@@ -1234,7 +1234,7 @@ var app = new Vue({
 				remark: '',
 				stroke: 6,
 				key: 'D',
-				link: './images/chords/全然向你.jpeg',
+				link: '',
 				lyrics: ''
 			},
 			{
@@ -1273,7 +1273,7 @@ var app = new Vue({
 				firstLine: '全能上帝是我的主我的神',
 				remark: '',
 				stroke: 6,
-				key: 'A',
+				key: '',
 				link: '',
 				lyrics: ''
 			},
@@ -1374,7 +1374,7 @@ var app = new Vue({
 				remark: '',
 				stroke: 6,
 				key: 'A',
-				link: './images/chords/因主的名.jpeg',
+				link: '',
 				lyrics: ''
 			},
 			{
@@ -1474,7 +1474,7 @@ var app = new Vue({
 				remark: '',
 				stroke: 6,
 				key: 'G',
-				link: './images/chords/在天上的爸爸.jpeg',
+				link: '',
 				lyrics: ''
 			},
 			{
@@ -1843,7 +1843,7 @@ var app = new Vue({
 				firstLine: '我一切的好處在主裡面',
 				remark: '',
 				stroke: 7,
-				key: 'A',
+				key: '',
 				link: '',
 				lyrics: ''
 			},
@@ -1863,7 +1863,7 @@ var app = new Vue({
 				firstLine: '你們要讚美耶和華 在祂的聖所讚美祂',
 				remark: '',
 				stroke: 7,
-				key: 'F',
+				key: '',
 				link: '',
 				lyrics: ''
 			},
@@ -1879,7 +1879,7 @@ var app = new Vue({
 			},
 			{
 				code: '7-N0109',
-				name: '你愛主麼?',
+				name: '你愛主麼',
 				firstLine: '你說你已經相信耶穌',
 				remark: '',
 				stroke: 7,
@@ -2354,7 +2354,7 @@ var app = new Vue({
 				remark: '',
 				stroke: 7,
 				key: 'C',
-				link: './images/chords/我要看見.jpeg',
+				link: '',
 				lyrics: ''
 			},
 			{
@@ -2593,7 +2593,7 @@ var app = new Vue({
 				firstLine: '榮耀歸於你權柄歸於你',
 				remark: '',
 				stroke: 8,
-				key: 'F',
+				key: '',
 				link: '',
 				lyrics: ''
 			},
@@ -3393,7 +3393,7 @@ var app = new Vue({
 				firstLine: '',
 				remark: '',
 				stroke: 10,
-				key: 'C',
+				key: '',
 				link: '',
 				lyrics: ''
 			},
@@ -3683,7 +3683,7 @@ var app = new Vue({
 				firstLine: '神願你來陶造我',
 				remark: '',
 				stroke: 11,
-				key: 'Dm',
+				key: '',
 				link: '',
 				lyrics: ''
 			},
@@ -4064,7 +4064,7 @@ var app = new Vue({
 				remark: '',
 				stroke: 13,
 				key: 'G',
-				link: './images/chords/當聖靈在我的心.jpeg',
+				link: '',
 				lyrics: ''
 			},
 			{
@@ -4924,7 +4924,7 @@ var app = new Vue({
 				remark: '',
 				stroke: 22,
 				key: 'G',
-				link: './images/chords/聽啊以色列.jpeg',
+				link: '',
 				lyrics: ''
 			},
 			{
@@ -5052,7 +5052,7 @@ var app = new Vue({
 				name: 'Glorify the Name',
 				firstLine: '',
 				remark: '',
-				stroke: 0,
+				stroke: '',
 				key: '',
 				link: '',
 				lyrics: ''
@@ -5062,7 +5062,7 @@ var app = new Vue({
 				name: 'Hallelujah 讚美主',
 				firstLine: 'Hallelujahl 來同聲歡唱',
 				remark: '',
-				stroke: 0,
+				stroke: '',
 				key: '',
 				link: '',
 				lyrics: ''
@@ -5072,7 +5072,7 @@ var app = new Vue({
 				name: 'Jehorah-Jireh',
 				firstLine: 'Jehorah-Jireh (耶和華以勒)',
 				remark: '',
-				stroke: 0,
+				stroke: '',
 				key: '',
 				link: '',
 				lyrics: ''
@@ -5082,7 +5082,7 @@ var app = new Vue({
 				name: 'Shalom 平安',
 				firstLine: '沙龍 沙龍祂名是耶和華沙龍',
 				remark: '',
-				stroke: 0,
+				stroke: '',
 				key: '',
 				link: '',
 				lyrics: ''
