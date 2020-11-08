@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CsvParser", "CsvParser\CsvParser.csproj", "{686A768F-0D91-4EFB-8337-7D691E9D1CFA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CsvParserConsole", "CsvParserConsole\CsvParserConsole.csproj", "{DD13F2C2-52AC-4C42-B6E5-2188997AAD0D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{686A768F-0D91-4EFB-8337-7D691E9D1CFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{686A768F-0D91-4EFB-8337-7D691E9D1CFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{686A768F-0D91-4EFB-8337-7D691E9D1CFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{686A768F-0D91-4EFB-8337-7D691E9D1CFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD13F2C2-52AC-4C42-B6E5-2188997AAD0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD13F2C2-52AC-4C42-B6E5-2188997AAD0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD13F2C2-52AC-4C42-B6E5-2188997AAD0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD13F2C2-52AC-4C42-B6E5-2188997AAD0D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

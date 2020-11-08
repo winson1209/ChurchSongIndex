@@ -7,6 +7,12 @@ table {
 	width: 100%;
 }
 
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 10px;
+}
+
 .updated-info {
   text-align: right;
 }

@@ -4,27 +4,22 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Text;
-using System.Windows;
 
-namespace CsvParser
+namespace CsvParserConsole
 {
-    /// <summary>
-    /// MainWindow.xaml 的互動邏輯
-    /// </summary>
-    public partial class MainWindow : Window
+    public class MainProgram
     {
-        public MainWindow()
+        public static void Main(string[] args)
         {
-            InitializeComponent();
             IEnumerable<Song> records;
 
-            using (var reader = new StreamReader(@"C:\Users\user\Documents\songs.csv", Encoding.Default, true))
+            using (var reader = new StreamReader("songs.csv", Encoding.Default, true))
             using (var csv = new CsvReader(reader, new CultureInfo("zh-HK")))
             {
                 records = csv.GetRecords<Song>().ToList();
             }
 
-            var outputFile = @"C:\Users\user\Documents\songs.txt";
+            var outputFile = @"songs.txt";
             if (File.Exists(outputFile))
             {
                 File.Delete(outputFile);
@@ -49,7 +44,6 @@ namespace CsvParser
 
                 File.AppendAllLines(outputFile, array, Encoding.Unicode);
             }
-
         }
     }
 }

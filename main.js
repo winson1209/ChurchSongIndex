@@ -1,32 +1,58 @@
 Vue.component('filter-form', {
 	template: `
 		<form class="filter-form">
-			<p>
-				<label for="searchCode">Code: </label>
-				<input id="searchCode" v-model="searchCode"></input>
-			</p>
-			<p>
-				<label for="stroke">筆劃：</label>
-				<select id="stroke" v-model.number="stroke">
-					<option></option>
-					<option v-for="n in 26"	:key="n" :value="n">
-						{{n}}
-					</option>
-				</select>
-			</p>
-			<p>
-				<label for="nameLength">歌名字數：</label>
-				<select id="nameLength" v-model.number="nameLength">
-					<option></option>
-					<option v-for="n in 18"	:key="n" :value="n">
-						{{n}}
-					</option>
-				</select>
-			</p>
-			<p>
-				<label for="wordContains">包含關鍵詞：</label>
-				<input id="wordContains" v-model="wordContains"></input>
-			</p>
+			<div class="grid-container">
+				<div>
+					<p>
+						<label for="searchCode">Code: </label>
+						<input id="searchCode" v-model="searchCode"></input>
+					</p>
+					<p>
+						<label for="stroke">筆劃：</label>
+						<select id="stroke" v-model.number="stroke">
+							<option></option>
+							<option v-for="n in 26"	:key="n" :value="n">
+								{{n}}
+							</option>
+						</select>
+					</p>
+					<p>
+						<label for="nameLength">歌名字數：</label>
+						<select id="nameLength" v-model.number="nameLength">
+							<option></option>
+							<option v-for="n in 18"	:key="n" :value="n">
+								{{n}}
+							</option>
+						</select>
+					</p>
+					<p>
+						<label for="wordContains">包含關鍵詞：</label>
+						<input id="wordContains" v-model="wordContains"></input>
+					</p>
+				</div>
+				<p>
+					<label for="key">調：</label>
+					<select id="key" v-model="key">
+						<option></option>
+						<option value="C">C</option>
+						<option value="Cm">Cm</option>
+						<option value="D">D</option>
+						<option value="Dm">Dm</option>
+						<option value="E">E</option>
+						<option value="Eb">Eb</option>
+						<option value="Em">Em</option>
+						<option value="F">F</option>
+						<option value="G">G</option>
+						<option value="Gm">Gm</option>
+						<option value="A">A</option>
+						<option value="Ab">Ab</option>
+						<option value="Am">Am</option>
+						<option value="Bb">Bb</option>
+						<option value="Bbm">Bbm</option>
+						<option value="Bm">Bm</option>
+					</select>
+				</p>
+			</div>
 			<p>
 				<button type="button" class="button" @click="onSubmit">搜尋</button>
 				<button type="button" class="button" @click="onShowAll">顯示全部</button>
@@ -39,6 +65,7 @@ Vue.component('filter-form', {
 			nameLength: null,
 			searchCode: null,
 			wordContains: null,
+			key: null,
 		}
 	},
 	methods: {
@@ -48,6 +75,7 @@ Vue.component('filter-form', {
 				nameLength: this.nameLength,
 				searchCode: this.searchCode,
 				wordContains: this.wordContains,
+				key: this.key,
 			}
 			
 			this.$emit('search-terms-entered', searchTerms)
@@ -58,12 +86,14 @@ Vue.component('filter-form', {
 				nameLength: null,
 				searchCode: null,
 				wordContains: null,
+				key: null,
 			}
 			
 			this.stroke = null
 			this.nameLength = null
 			this.searchCode = null
 			this.wordContains = null
+			this.key = null
 			
 			this.$emit('search-terms-entered', searchTerms)
 		},
@@ -2282,7 +2312,7 @@ var app = new Vue({
 				firstLine: '我要向高山舉目 我的幫助從何而來',
 				remark: '中段: 哈利路亞',
 				stroke: 7,
-				key: '',
+				key: 'D',
 				link: '',
 				lyrics: ''
 			},
@@ -2292,7 +2322,7 @@ var app = new Vue({
 				firstLine: '神呀 是祢喜歡跟我相親',
 				remark: '',
 				stroke: 7,
-				key: '',
+				key: 'E',
 				link: '',
 				lyrics: ''
 			},
@@ -2302,7 +2332,7 @@ var app = new Vue({
 				firstLine: '我的力量',
 				remark: '',
 				stroke: 7,
-				key: '',
+				key: 'G',
 				link: '',
 				lyrics: ''
 			},
@@ -2312,7 +2342,7 @@ var app = new Vue({
 				firstLine: '我能夠看見你的聖潔',
 				remark: '',
 				stroke: 7,
-				key: '',
+				key: 'C',
 				link: '',
 				lyrics: ''
 			},
@@ -2322,7 +2352,7 @@ var app = new Vue({
 				firstLine: '我在這裡讚美',
 				remark: '',
 				stroke: 7,
-				key: '',
+				key: 'F',
 				link: '',
 				lyrics: ''
 			},
@@ -2332,7 +2362,7 @@ var app = new Vue({
 				firstLine: '全心感謝全心讚美進入你的院',
 				remark: '',
 				stroke: 7,
-				key: '',
+				key: 'F',
 				link: '',
 				lyrics: ''
 			},
@@ -2342,7 +2372,7 @@ var app = new Vue({
 				firstLine: '我們等候主不住尋求祢面',
 				remark: '',
 				stroke: 7,
-				key: '',
+				key: 'F',
 				link: '',
 				lyrics: ''
 			},
@@ -2362,7 +2392,7 @@ var app = new Vue({
 				firstLine: '用聖靈與火為我施洗',
 				remark: '',
 				stroke: 7,
-				key: '',
+				key: 'D',
 				link: '',
 				lyrics: ''
 			},
@@ -2372,7 +2402,7 @@ var app = new Vue({
 				firstLine: '宇宙的中心耶穌',
 				remark: '',
 				stroke: 7,
-				key: '',
+				key: 'F',
 				link: '',
 				lyrics: ''
 			},
@@ -2382,7 +2412,7 @@ var app = new Vue({
 				firstLine: '主我們同心在祢面前',
 				remark: '',
 				stroke: 7,
-				key: '',
+				key: 'A',
 				link: '',
 				lyrics: ''
 			},
@@ -2392,7 +2422,7 @@ var app = new Vue({
 				firstLine: '在創世以前天父祂已經愛我',
 				remark: '',
 				stroke: 7,
-				key: '',
+				key: 'C',
 				link: '',
 				lyrics: ''
 			},
@@ -2412,7 +2442,7 @@ var app = new Vue({
 				firstLine: '我全心信靠我主',
 				remark: '',
 				stroke: 7,
-				key: '',
+				key: 'F',
 				link: '',
 				lyrics: ''
 			},
@@ -2422,7 +2452,7 @@ var app = new Vue({
 				firstLine: '祢是我神是我的依傍',
 				remark: '',
 				stroke: 7,
-				key: '',
+				key: 'E',
 				link: '',
 				lyrics: ''
 			},
@@ -2432,7 +2462,7 @@ var app = new Vue({
 				firstLine: '那裡有主的聖靈那裡就有自由',
 				remark: '',
 				stroke: 7,
-				key: '',
+				key: 'G',
 				link: '',
 				lyrics: ''
 			},
@@ -2452,7 +2482,7 @@ var app = new Vue({
 				firstLine: '憶當天的那段舊夢',
 				remark: '',
 				stroke: 7,
-				key: '',
+				key: 'C',
 				link: '',
 				lyrics: ''
 			},
@@ -2462,7 +2492,7 @@ var app = new Vue({
 				firstLine: '在乾旱無水之地我渴慕你',
 				remark: '',
 				stroke: 7,
-				key: '',
+				key: 'D',
 				link: '',
 				lyrics: ''
 			},
@@ -2472,7 +2502,7 @@ var app = new Vue({
 				firstLine: '奉主耶穌聖名',
 				remark: '',
 				stroke: 8,
-				key: '',
+				key: 'F',
 				link: '',
 				lyrics: ''
 			},
@@ -2482,7 +2512,7 @@ var app = new Vue({
 				firstLine: '求主將我心化做青草地',
 				remark: '',
 				stroke: 8,
-				key: '',
+				key: 'F',
 				link: '',
 				lyrics: ''
 			},
@@ -2502,7 +2532,7 @@ var app = new Vue({
 				firstLine: '求主加倍充滿我心求主加倍釋放生命',
 				remark: '',
 				stroke: 8,
-				key: '',
+				key: 'E',
 				link: '',
 				lyrics: ''
 			},
@@ -2512,7 +2542,7 @@ var app = new Vue({
 				firstLine: '肩並肩踏上天國路 怠恩歌聲飄滿路',
 				remark: '',
 				stroke: 8,
-				key: '',
+				key: 'A',
 				link: '',
 				lyrics: ''
 			},
@@ -2522,7 +2552,7 @@ var app = new Vue({
 				firstLine: '一雙手為我 將祝福賜下',
 				remark: '',
 				stroke: 8,
-				key: '',
+				key: 'D',
 				link: '',
 				lyrics: ''
 			},
@@ -2532,7 +2562,7 @@ var app = new Vue({
 				firstLine: '來頌讚神您愛不改',
 				remark: '',
 				stroke: 8,
-				key: '',
+				key: 'G',
 				link: '',
 				lyrics: ''
 			},
@@ -2542,7 +2572,7 @@ var app = new Vue({
 				firstLine: '來高聲唱 來高聲唱',
 				remark: '',
 				stroke: 8,
-				key: '',
+				key: 'A',
 				link: '',
 				lyrics: ''
 			},
@@ -2552,7 +2582,7 @@ var app = new Vue({
 				firstLine: '頌樂妙曲響遍遍',
 				remark: '',
 				stroke: 8,
-				key: '',
+				key: 'E',
 				link: '',
 				lyrics: ''
 			},
@@ -2562,7 +2592,7 @@ var app = new Vue({
 				firstLine: '來頌讚主生辰',
 				remark: '聖誕用',
 				stroke: 8,
-				key: '',
+				key: 'Em',
 				link: '',
 				lyrics: ''
 			},
@@ -2582,7 +2612,7 @@ var app = new Vue({
 				firstLine: '問我怎向主回應',
 				remark: '',
 				stroke: 8,
-				key: '',
+				key: 'Bb',
 				link: '',
 				lyrics: ''
 			},
@@ -2592,7 +2622,7 @@ var app = new Vue({
 				firstLine: '榮耀歸於你權柄歸於你',
 				remark: '',
 				stroke: 8,
-				key: '',
+				key: 'F',
 				link: '',
 				lyrics: ''
 			},
@@ -2612,7 +2642,7 @@ var app = new Vue({
 				firstLine: '',
 				remark: '',
 				stroke: 8,
-				key: '',
+				key: 'C',
 				link: '',
 				lyrics: ''
 			},
@@ -2632,7 +2662,7 @@ var app = new Vue({
 				firstLine: '向前走呀勇往不退後',
 				remark: '',
 				stroke: 8,
-				key: '',
+				key: 'C',
 				link: '',
 				lyrics: ''
 			},
@@ -2642,7 +2672,7 @@ var app = new Vue({
 				firstLine: '和撒那',
 				remark: '',
 				stroke: 8,
-				key: '',
+				key: 'G',
 				link: '',
 				lyrics: ''
 			},
@@ -2652,7 +2682,7 @@ var app = new Vue({
 				firstLine: '直到主耶穌再來時候',
 				remark: '',
 				stroke: 8,
-				key: '',
+				key: 'C',
 				link: '',
 				lyrics: ''
 			},
@@ -2662,7 +2692,7 @@ var app = new Vue({
 				firstLine: '我們是你的百姓',
 				remark: '',
 				stroke: 9,
-				key: '',
+				key: 'A',
 				link: '',
 				lyrics: ''
 			},
@@ -2682,7 +2712,7 @@ var app = new Vue({
 				firstLine: '開我的眼睛，讓我看見你',
 				remark: '',
 				stroke: 9,
-				key: '',
+				key: 'D',
 				link: '',
 				lyrics: ''
 			},
@@ -2692,7 +2722,7 @@ var app = new Vue({
 				firstLine: '有一份愛從天而來比山高比海深',
 				remark: '',
 				stroke: 9,
-				key: '',
+				key: 'C',
 				link: '',
 				lyrics: ''
 			},
@@ -2702,7 +2732,7 @@ var app = new Vue({
 				firstLine: '活著是為我主 有祢是我一生的褔氣',
 				remark: '',
 				stroke: 9,
-				key: '',
+				key: 'A',
 				link: '',
 				lyrics: ''
 			},
@@ -2712,7 +2742,7 @@ var app = new Vue({
 				firstLine: '神造萬有為彰顯美好生命',
 				remark: '',
 				stroke: 9,
-				key: '',
+				key: 'F',
 				link: '',
 				lyrics: ''
 			},
@@ -2722,7 +2752,7 @@ var app = new Vue({
 				firstLine: '黑夜將過去，未來不再遲疑',
 				remark: '',
 				stroke: 9,
-				key: '',
+				key: 'F',
 				link: '',
 				lyrics: ''
 			},
@@ -2732,7 +2762,7 @@ var app = new Vue({
 				firstLine: '愛使我們相聚一起',
 				remark: '',
 				stroke: 9,
-				key: '',
+				key: 'Ab',
 				link: '',
 				lyrics: ''
 			},
@@ -2742,7 +2772,7 @@ var app = new Vue({
 				firstLine: '明天怎麼你還是不知道',
 				remark: '',
 				stroke: 9,
-				key: '',
+				key: 'C',
 				link: '',
 				lyrics: ''
 			},
@@ -2752,7 +2782,7 @@ var app = new Vue({
 				firstLine: '活著就是基督 活著就是基督',
 				remark: '',
 				stroke: 9,
-				key: '',
+				key: 'C',
 				link: '',
 				lyrics: ''
 			},
@@ -2762,7 +2792,7 @@ var app = new Vue({
 				firstLine: '為主歌唱 頌讚聲響四方',
 				remark: '',
 				stroke: 9,
-				key: '',
+				key: 'C',
 				link: '',
 				lyrics: ''
 			},
@@ -2772,7 +2802,7 @@ var app = new Vue({
 				firstLine: '我試過去深愛他 也試過去憎惡他',
 				remark: '',
 				stroke: 9,
-				key: '',
+				key: 'A',
 				link: '',
 				lyrics: ''
 			},
@@ -2782,7 +2812,7 @@ var app = new Vue({
 				firstLine: '有一個夢想在我心頭',
 				remark: '',
 				stroke: 9,
-				key: '',
+				key: 'E',
 				link: '',
 				lyrics: ''
 			},
@@ -2802,7 +2832,7 @@ var app = new Vue({
 				firstLine: '思想他的愛 思想他的良善',
 				remark: '',
 				stroke: 9,
-				key: '',
+				key: 'D',
 				link: '',
 				lyrics: ''
 			},
@@ -2822,7 +2852,7 @@ var app = new Vue({
 				firstLine: '壓傷的蘆葦它不折斷',
 				remark: '',
 				stroke: 9,
-				key: '',
+				key: 'Dm',
 				link: '',
 				lyrics: ''
 			},
@@ -2832,7 +2862,7 @@ var app = new Vue({
 				firstLine: '綠野碧海生機處處',
 				remark: '',
 				stroke: 9,
-				key: '',
+				key: 'C',
 				link: '',
 				lyrics: ''
 			},
@@ -2842,7 +2872,7 @@ var app = new Vue({
 				firstLine: '耶和華是愛 讓我安身青草溪水邊',
 				remark: '',
 				stroke: 9,
-				key: '',
+				key: 'Eb',
 				link: '',
 				lyrics: ''
 			},
@@ -2852,7 +2882,7 @@ var app = new Vue({
 				firstLine: '耶和華喜樂靈現在來充滿我',
 				remark: '',
 				stroke: 9,
-				key: '',
+				key: 'Em',
 				link: '',
 				lyrics: ''
 			},
@@ -2862,7 +2892,7 @@ var app = new Vue({
 				firstLine: '耶穌 耶穌 耶穌 祢愛已溶化我心',
 				remark: '',
 				stroke: 9,
-				key: '',
+				key: 'Ab',
 				link: '',
 				lyrics: ''
 			},
@@ -2872,7 +2902,7 @@ var app = new Vue({
 				firstLine: '耶穌我愛你 我站在你面前',
 				remark: '',
 				stroke: 9,
-				key: '',
+				key: 'C',
 				link: '',
 				lyrics: ''
 			},
@@ -2882,7 +2912,7 @@ var app = new Vue({
 				firstLine: '耶穌基督拯救我生命',
 				remark: '',
 				stroke: 9,
-				key: '',
+				key: 'Dm',
 				link: '',
 				lyrics: ''
 			},
@@ -2892,7 +2922,7 @@ var app = new Vue({
 				firstLine: '耶穌基督是主',
 				remark: '',
 				stroke: 9,
-				key: '',
+				key: 'Em',
 				link: '',
 				lyrics: ''
 			},
@@ -2902,7 +2932,7 @@ var app = new Vue({
 				firstLine: '這世界 有個千年不變道理',
 				remark: '',
 				stroke: 9,
-				key: '',
+				key: 'D',
 				link: '',
 				lyrics: ''
 			},
@@ -2922,7 +2952,7 @@ var app = new Vue({
 				firstLine: '當我每感失落沒能力解決是祢令我得安慰',
 				remark: '',
 				stroke: 9,
-				key: '',
+				key: 'Eb',
 				link: '',
 				lyrics: ''
 			},
@@ -2932,7 +2962,7 @@ var app = new Vue({
 				firstLine: '耶穌願你為王 我們宣揚你是王',
 				remark: '',
 				stroke: 9,
-				key: '',
+				key: 'G',
 				link: '',
 				lyrics: ''
 			},
@@ -2942,7 +2972,7 @@ var app = new Vue({
 				firstLine: '耶穌配得至聖尊榮',
 				remark: '',
 				stroke: 9,
-				key: '',
+				key: 'Bb',
 				link: '',
 				lyrics: ''
 			},
@@ -2952,7 +2982,7 @@ var app = new Vue({
 				firstLine: '',
 				remark: '',
 				stroke: 9,
-				key: '',
+				key: 'C',
 				link: '',
 				lyrics: ''
 			},
@@ -2962,7 +2992,7 @@ var app = new Vue({
 				firstLine: '主的靈在我身上',
 				remark: '',
 				stroke: 9,
-				key: '',
+				key: 'C',
 				link: '',
 				lyrics: ''
 			},
@@ -2972,7 +3002,7 @@ var app = new Vue({
 				firstLine: '',
 				remark: '',
 				stroke: 9,
-				key: '',
+				key: 'Dm',
 				link: '',
 				lyrics: ''
 			},
@@ -2982,7 +3012,7 @@ var app = new Vue({
 				firstLine: '耶和華祢是我的神',
 				remark: '',
 				stroke: 9,
-				key: '',
+				key: 'D',
 				link: '',
 				lyrics: ''
 			},
@@ -2992,7 +3022,7 @@ var app = new Vue({
 				firstLine: '主啊我心切慕主聖靈',
 				remark: '',
 				stroke: 9,
-				key: '',
+				key: 'Bb',
 				link: '',
 				lyrics: ''
 			},
@@ -3002,7 +3032,7 @@ var app = new Vue({
 				firstLine: '耶穌你是寶貴',
 				remark: '',
 				stroke: 9,
-				key: '',
+				key: 'F',
 				link: '',
 				lyrics: ''
 			},
@@ -3022,7 +3052,7 @@ var app = new Vue({
 				firstLine: '耶穌他愛你所以他願意從天上為你降生',
 				remark: '',
 				stroke: 9,
-				key: '',
+				key: 'C',
 				link: '',
 				lyrics: ''
 			},
@@ -3032,7 +3062,7 @@ var app = new Vue({
 				firstLine: '如若你能看見藍天',
 				remark: '',
 				stroke: 9,
-				key: '',
+				key: 'D',
 				link: '',
 				lyrics: ''
 			},
@@ -3042,7 +3072,7 @@ var app = new Vue({
 				firstLine: '我並不完美',
 				remark: '',
 				stroke: 9,
-				key: '',
+				key: 'E',
 				link: '',
 				lyrics: ''
 			},
@@ -3052,7 +3082,7 @@ var app = new Vue({
 				firstLine: '謝謝你天父創造遍世間',
 				remark: '',
 				stroke: 9,
-				key: '',
+				key: 'Bb',
 				link: '',
 				lyrics: ''
 			},
@@ -3062,7 +3092,7 @@ var app = new Vue({
 				firstLine: '祝福你在主基督裡',
 				remark: '',
 				stroke: 9,
-				key: '',
+				key: 'C',
 				link: '',
 				lyrics: ''
 			},
@@ -3072,7 +3102,7 @@ var app = new Vue({
 				firstLine: '主告訴我 如何獻上我的生命',
 				remark: '',
 				stroke: 10,
-				key: '',
+				key: 'G',
 				link: '',
 				lyrics: ''
 			},
@@ -3082,7 +3112,7 @@ var app = new Vue({
 				firstLine: '大地頌讚歡唱讚美你名字',
 				remark: '',
 				stroke: 10,
-				key: '',
+				key: 'D',
 				link: '',
 				lyrics: ''
 			},
@@ -3092,7 +3122,7 @@ var app = new Vue({
 				firstLine: '除你以外 在天上我還能有誰',
 				remark: '',
 				stroke: 10,
-				key: '',
+				key: 'D',
 				link: '',
 				lyrics: ''
 			},
@@ -3102,7 +3132,7 @@ var app = new Vue({
 				firstLine: '剛強壯膽不要畏懼神現與我們同在',
 				remark: '',
 				stroke: 10,
-				key: '',
+				key: 'Dm',
 				link: '',
 				lyrics: ''
 			},
@@ -3112,7 +3142,7 @@ var app = new Vue({
 				firstLine: '我看見真正路向',
 				remark: '',
 				stroke: 10,
-				key: '',
+				key: 'G',
 				link: '',
 				lyrics: ''
 			},
@@ -3122,7 +3152,7 @@ var app = new Vue({
 				firstLine: '主耶和華你已經鑒察了我',
 				remark: '',
 				stroke: 10,
-				key: '',
+				key: 'D',
 				link: '',
 				lyrics: ''
 			},
@@ -3132,7 +3162,7 @@ var app = new Vue({
 				firstLine: '茫茫宇宙有愛心的禮物',
 				remark: '',
 				stroke: 10,
-				key: '',
+				key: 'C',
 				link: '',
 				lyrics: ''
 			},
@@ -3152,7 +3182,7 @@ var app = new Vue({
 				firstLine: '神祢極偉大',
 				remark: '',
 				stroke: 10,
-				key: '',
+				key: 'G',
 				link: '',
 				lyrics: ''
 			},
@@ -3162,7 +3192,7 @@ var app = new Vue({
 				firstLine: '沒有佩戴冠冕',
 				remark: '',
 				stroke: 10,
-				key: '',
+				key: 'G',
 				link: '',
 				lyrics: ''
 			},
@@ -3172,7 +3202,7 @@ var app = new Vue({
 				firstLine: '祢是我的主 祢是造我的主',
 				remark: '',
 				stroke: 10,
-				key: '',
+				key: 'Bb',
 				link: '',
 				lyrics: ''
 			},
@@ -3182,7 +3212,7 @@ var app = new Vue({
 				firstLine: '是甚麼問是甚麼',
 				remark: '',
 				stroke: 10,
-				key: '',
+				key: 'G',
 				link: '',
 				lyrics: ''
 			},
@@ -3192,7 +3222,7 @@ var app = new Vue({
 				firstLine: '祢創造諸天 祢創造深海',
 				remark: '',
 				stroke: 10,
-				key: '',
+				key: 'Dm',
 				link: '',
 				lyrics: ''
 			},
@@ -3202,7 +3232,7 @@ var app = new Vue({
 				firstLine: '頌讚主頌讚主高聲歡唱',
 				remark: '',
 				stroke: 10,
-				key: '',
+				key: 'G',
 				link: '',
 				lyrics: ''
 			},
@@ -3212,7 +3242,7 @@ var app = new Vue({
 				firstLine: '我靈歌唱 讚美救主我神',
 				remark: '',
 				stroke: 10,
-				key: '',
+				key: 'A',
 				link: '',
 				lyrics: ''
 			},
@@ -3222,7 +3252,7 @@ var app = new Vue({
 				firstLine: '祢恩典豐富極深厚',
 				remark: '',
 				stroke: 10,
-				key: '',
+				key: 'E',
 				link: '',
 				lyrics: ''
 			},
@@ -3232,7 +3262,7 @@ var app = new Vue({
 				firstLine: '耶穌祢是何等聖潔美麗',
 				remark: '',
 				stroke: 10,
-				key: '',
+				key: 'F',
 				link: '',
 				lyrics: ''
 			},
@@ -3242,7 +3272,7 @@ var app = new Vue({
 				firstLine: '主祢充滿在這地',
 				remark: '',
 				stroke: 10,
-				key: '',
+				key: 'F',
 				link: '',
 				lyrics: ''
 			},
@@ -3252,7 +3282,7 @@ var app = new Vue({
 				firstLine: '聖哉聖哉全地唱',
 				remark: '',
 				stroke: 10,
-				key: '',
+				key: 'G',
 				link: '',
 				lyrics: ''
 			},
@@ -3262,7 +3292,7 @@ var app = new Vue({
 				firstLine: '你以恩典為年歲的冠冕',
 				remark: '',
 				stroke: 10,
-				key: '',
+				key: 'D',
 				link: '',
 				lyrics: ''
 			},
@@ -3272,7 +3302,7 @@ var app = new Vue({
 				firstLine: '我將祢的話語深藏在我心',
 				remark: '',
 				stroke: 10,
-				key: '',
+				key: 'E',
 				link: '',
 				lyrics: ''
 			},
@@ -3282,7 +3312,7 @@ var app = new Vue({
 				firstLine: '哦聖靈啊 求你來潔淨我',
 				remark: '',
 				stroke: 10,
-				key: '',
+				key: 'F',
 				link: '',
 				lyrics: ''
 			},
@@ -3292,7 +3322,7 @@ var app = new Vue({
 				firstLine: '我屬於祢祢是我永遠的福分',
 				remark: '',
 				stroke: 10,
-				key: '',
+				key: 'G',
 				link: '',
 				lyrics: ''
 			},
@@ -3302,7 +3332,7 @@ var app = new Vue({
 				firstLine: '配得 你是配得 我的主',
 				remark: '',
 				stroke: 10,
-				key: '',
+				key: 'F',
 				link: '',
 				lyrics: ''
 			},
@@ -3312,7 +3342,7 @@ var app = new Vue({
 				firstLine: '神大恩無限',
 				remark: '',
 				stroke: 10,
-				key: '',
+				key: 'F',
 				link: '',
 				lyrics: ''
 			},
@@ -3322,7 +3352,7 @@ var app = new Vue({
 				firstLine: '神啊我要一心稱謝祢',
 				remark: '',
 				stroke: 10,
-				key: '',
+				key: 'E',
 				link: '',
 				lyrics: ''
 			},
@@ -3332,7 +3362,7 @@ var app = new Vue({
 				firstLine: '用鼓樂歌頌 神是永活全能',
 				remark: '',
 				stroke: 10,
-				key: '',
+				key: 'Dm',
 				link: '',
 				lyrics: ''
 			},
@@ -3342,7 +3372,7 @@ var app = new Vue({
 				firstLine: '祂陪我走過',
 				remark: '',
 				stroke: 10,
-				key: '',
+				key: 'G',
 				link: '',
 				lyrics: ''
 			},
@@ -3352,7 +3382,7 @@ var app = new Vue({
 				firstLine: '神要開道路 在曠野無路之處',
 				remark: '',
 				stroke: 10,
-				key: '',
+				key: 'G',
 				link: '',
 				lyrics: ''
 			},
@@ -3362,7 +3392,7 @@ var app = new Vue({
 				firstLine: '我的天為何總下著雨',
 				remark: '',
 				stroke: 10,
-				key: '',
+				key: 'F',
 				link: '',
 				lyrics: ''
 			},
@@ -3372,7 +3402,7 @@ var app = new Vue({
 				firstLine: '榮耀歸於真神',
 				remark: '',
 				stroke: 10,
-				key: '',
+				key: 'Bb',
 				link: '',
 				lyrics: ''
 			},
@@ -3382,7 +3412,7 @@ var app = new Vue({
 				firstLine: '我唱出神大愛',
 				remark: '',
 				stroke: 10,
-				key: '',
+				key: 'A',
 				link: '',
 				lyrics: ''
 			},
@@ -3392,7 +3422,7 @@ var app = new Vue({
 				firstLine: '',
 				remark: '',
 				stroke: 10,
-				key: '',
+				key: 'C',
 				link: '',
 				lyrics: ''
 			},
@@ -3402,7 +3432,7 @@ var app = new Vue({
 				firstLine: '主呀你的國裂天降臨',
 				remark: '',
 				stroke: 10,
-				key: '',
+				key: 'C',
 				link: '',
 				lyrics: ''
 			},
@@ -3412,7 +3442,7 @@ var app = new Vue({
 				firstLine: '容許我開口說我想見祢',
 				remark: '',
 				stroke: 10,
-				key: '',
+				key: 'D',
 				link: '',
 				lyrics: ''
 			},
@@ -3422,7 +3452,7 @@ var app = new Vue({
 				firstLine: '如果越多的愛是叫人流越多的淚',
 				remark: '',
 				stroke: 10,
-				key: '',
+				key: 'D',
 				link: '',
 				lyrics: ''
 			},
@@ -3432,7 +3462,7 @@ var app = new Vue({
 				firstLine: '晨曦之中我尋求神話語',
 				remark: '',
 				stroke: 10,
-				key: '',
+				key: 'A',
 				link: '',
 				lyrics: ''
 			},
@@ -3442,7 +3472,7 @@ var app = new Vue({
 				firstLine: '這天 同聚於主聖殿',
 				remark: '',
 				stroke: 10,
-				key: '',
+				key: 'D',
 				link: '',
 				lyrics: ''
 			},
@@ -3472,7 +3502,7 @@ var app = new Vue({
 				firstLine: '你是我的主，引我走正義路',
 				remark: '',
 				stroke: 10,
-				key: '',
+				key: 'F',
 				link: '',
 				lyrics: ''
 			},
@@ -3482,7 +3512,7 @@ var app = new Vue({
 				firstLine: '真的有一位神愛你',
 				remark: '',
 				stroke: 10,
-				key: '',
+				key: 'E',
 				link: '',
 				lyrics: ''
 			},
@@ -3492,7 +3522,7 @@ var app = new Vue({
 				firstLine: '無法可修飾的一對手',
 				remark: '母親節用',
 				stroke: 10,
-				key: '',
+				key: 'C',
 				link: '',
 				lyrics: ''
 			},
@@ -3502,7 +3532,7 @@ var app = new Vue({
 				firstLine: '主,都是因為祢的愛',
 				remark: '',
 				stroke: 10,
-				key: '',
+				key: 'F',
 				link: '',
 				lyrics: ''
 			},
@@ -3512,7 +3542,7 @@ var app = new Vue({
 				firstLine: '祝福大家 一生快樂好福氣',
 				remark: '',
 				stroke: 10,
-				key: '',
+				key: 'C',
 				link: '',
 				lyrics: ''
 			},
@@ -3522,7 +3552,7 @@ var app = new Vue({
 				firstLine: '',
 				remark: '',
 				stroke: 10,
-				key: '',
+				key: 'C',
 				link: '',
 				lyrics: ''
 			},
@@ -3532,7 +3562,7 @@ var app = new Vue({
 				firstLine: '生命的河 喜樂的河',
 				remark: '',
 				stroke: 11,
-				key: '',
+				key: 'Am',
 				link: '',
 				lyrics: ''
 			},
@@ -3552,7 +3582,7 @@ var app = new Vue({
 				firstLine: '從神而來的那些真愛那些真愛',
 				remark: '',
 				stroke: 11,
-				key: '',
+				key: 'D',
 				link: '',
 				lyrics: ''
 			},
@@ -3562,7 +3592,7 @@ var app = new Vue({
 				firstLine: '將天敞開',
 				remark: '',
 				stroke: 11,
-				key: '',
+				key: 'G',
 				link: '',
 				lyrics: ''
 			},
@@ -3572,7 +3602,7 @@ var app = new Vue({
 				firstLine: '得勝大得勝屬於主',
 				remark: '',
 				stroke: 11,
-				key: '',
+				key: 'Em',
 				link: '',
 				lyrics: ''
 			},
@@ -3592,7 +3622,7 @@ var app = new Vue({
 				firstLine: '基督生世上為我犧牲洗罪',
 				remark: '',
 				stroke: 11,
-				key: '',
+				key: 'Em',
 				link: '',
 				lyrics: ''
 			},
@@ -3602,7 +3632,7 @@ var app = new Vue({
 				firstLine: '',
 				remark: '聖誕用',
 				stroke: 11,
-				key: '',
+				key: 'G',
 				link: '',
 				lyrics: ''
 			},
@@ -3612,7 +3642,7 @@ var app = new Vue({
 				firstLine: '軟弱的我變剛強',
 				remark: '',
 				stroke: 11,
-				key: '',
+				key: 'C',
 				link: '',
 				lyrics: ''
 			},
@@ -3622,7 +3652,7 @@ var app = new Vue({
 				firstLine: '問我主恩有幾多 究竟主恩有幾多',
 				remark: '',
 				stroke: 11,
-				key: '',
+				key: 'D',
 				link: '',
 				lyrics: ''
 			},
@@ -3632,7 +3662,7 @@ var app = new Vue({
 				firstLine: '曾經踏遍路途千萬里',
 				remark: '',
 				stroke: 11,
-				key: '',
+				key: 'C',
 				link: '',
 				lyrics: ''
 			},
@@ -3642,7 +3672,7 @@ var app = new Vue({
 				firstLine: '願被救贖的百姓都說',
 				remark: '',
 				stroke: 11,
-				key: '',
+				key: 'C',
 				link: '',
 				lyrics: ''
 			},
@@ -3652,7 +3682,7 @@ var app = new Vue({
 				firstLine: '常存讚美 心中歡欣',
 				remark: '',
 				stroke: 11,
-				key: '',
+				key: 'G',
 				link: '',
 				lyrics: ''
 			},
@@ -3662,7 +3692,7 @@ var app = new Vue({
 				firstLine: '常常喜樂 向主高歌 不論環境如何',
 				remark: '',
 				stroke: 11,
-				key: '',
+				key: 'G',
 				link: '',
 				lyrics: ''
 			},
@@ -3672,7 +3702,7 @@ var app = new Vue({
 				firstLine: '耶穌誠然擔當 我們的憂患',
 				remark: '',
 				stroke: 11,
-				key: '',
+				key: 'G',
 				link: '',
 				lyrics: ''
 			},
@@ -3682,7 +3712,7 @@ var app = new Vue({
 				firstLine: '神願你來陶造我',
 				remark: '',
 				stroke: 11,
-				key: '',
+				key: 'Dm',
 				link: '',
 				lyrics: ''
 			},
@@ -3692,7 +3722,7 @@ var app = new Vue({
 				firstLine: '耶穌你能使瞎眼看見',
 				remark: '',
 				stroke: 11,
-				key: '',
+				key: 'G',
 				link: '',
 				lyrics: ''
 			},
@@ -3702,7 +3732,7 @@ var app = new Vue({
 				firstLine: '今天，盡是滿身傷痕',
 				remark: '',
 				stroke: 11,
-				key: '',
+				key: 'A',
 				link: '',
 				lyrics: ''
 			},
@@ -3712,7 +3742,7 @@ var app = new Vue({
 				firstLine: '看哪猶大獅子已得勝',
 				remark: '',
 				stroke: 11,
-				key: '',
+				key: 'G',
 				link: '',
 				lyrics: ''
 			},
@@ -3722,7 +3752,7 @@ var app = new Vue({
 				firstLine: '靠近祢 靠近祢',
 				remark: 'BY TTK',
 				stroke: 11,
-				key: '',
+				key: 'F',
 				link: '',
 				lyrics: ''
 			},
@@ -3732,7 +3762,7 @@ var app = new Vue({
 				firstLine: '在無數的黑夜裡',
 				remark: '',
 				stroke: 11,
-				key: '',
+				key: 'D',
 				link: '',
 				lyrics: ''
 			},
@@ -3742,7 +3772,7 @@ var app = new Vue({
 				firstLine: '我如此污穢',
 				remark: '',
 				stroke: 11,
-				key: '',
+				key: 'D',
 				link: '',
 				lyrics: ''
 			},
@@ -3752,7 +3782,7 @@ var app = new Vue({
 				firstLine: '這是聖潔之地 神在這裡',
 				remark: '',
 				stroke: 11,
-				key: '',
+				key: 'D',
 				link: '',
 				lyrics: ''
 			},
@@ -3762,7 +3792,7 @@ var app = new Vue({
 				firstLine: '事物道理千千',
 				remark: '',
 				stroke: 12,
-				key: '',
+				key: 'C',
 				link: '',
 				lyrics: ''
 			},
@@ -3772,7 +3802,7 @@ var app = new Vue({
 				firstLine: '若我的子民 謙卑禱告尋覓著我臉',
 				remark: '',
 				stroke: 12,
-				key: '',
+				key: 'C',
 				link: '',
 				lyrics: ''
 			},
@@ -3782,7 +3812,7 @@ var app = new Vue({
 				firstLine: '',
 				remark: '',
 				stroke: 12,
-				key: '',
+				key: 'C',
 				link: '',
 				lyrics: ''
 			},
@@ -3792,7 +3822,7 @@ var app = new Vue({
 				firstLine: '傳說人生只不過是個夢',
 				remark: '',
 				stroke: 12,
-				key: '',
+				key: 'F',
 				link: '',
 				lyrics: ''
 			},
@@ -3812,7 +3842,7 @@ var app = new Vue({
 				firstLine: '主給我一個夢',
 				remark: '',
 				stroke: 12,
-				key: '',
+				key: 'D',
 				link: '',
 				lyrics: ''
 			},
@@ -3822,7 +3852,7 @@ var app = new Vue({
 				firstLine: '求祢復興我 心中的聖潔',
 				remark: '',
 				stroke: 12,
-				key: '',
+				key: 'C',
 				link: '',
 				lyrics: ''
 			},
@@ -3832,7 +3862,7 @@ var app = new Vue({
 				firstLine: '祢十字架的大能',
 				remark: '',
 				stroke: 12,
-				key: '',
+				key: 'F',
 				link: '',
 				lyrics: ''
 			},
@@ -3842,7 +3872,7 @@ var app = new Vue({
 				firstLine: '心願能尋路向',
 				remark: '',
 				stroke: 12,
-				key: '',
+				key: 'C',
 				link: '',
 				lyrics: ''
 			},
@@ -3852,7 +3882,7 @@ var app = new Vue({
 				firstLine: '心中渴望你的靈',
 				remark: '',
 				stroke: 12,
-				key: '',
+				key: 'D',
 				link: '',
 				lyrics: ''
 			},
@@ -3862,7 +3892,7 @@ var app = new Vue({
 				firstLine: '在我心中渴望常有你',
 				remark: '',
 				stroke: 12,
-				key: '',
+				key: 'D',
 				link: '',
 				lyrics: ''
 			},
@@ -3872,7 +3902,7 @@ var app = new Vue({
 				firstLine: '虛心的人真是有福 天國是祂們的',
 				remark: '',
 				stroke: 12,
-				key: '',
+				key: 'F',
 				link: '',
 				lyrics: ''
 			},
@@ -3882,7 +3912,7 @@ var app = new Vue({
 				firstLine: '我地來賀歲 互獻祝福句',
 				remark: '',
 				stroke: 12,
-				key: '',
+				key: 'D',
 				link: '',
 				lyrics: ''
 			},
@@ -3902,7 +3932,7 @@ var app = new Vue({
 				firstLine: '開開心心高歌',
 				remark: '',
 				stroke: 12,
-				key: '',
+				key: 'F',
 				link: '',
 				lyrics: ''
 			},
@@ -3912,7 +3942,7 @@ var app = new Vue({
 				firstLine: '開你雙眼 看那榮耀的君王',
 				remark: '',
 				stroke: 12,
-				key: '',
+				key: 'C',
 				link: '',
 				lyrics: ''
 			},
@@ -3922,7 +3952,7 @@ var app = new Vue({
 				firstLine: '讓我欣賞你 青春可愛面容',
 				remark: '',
 				stroke: 12,
-				key: '',
+				key: 'A',
 				link: '',
 				lyrics: ''
 			},
@@ -3932,7 +3962,7 @@ var app = new Vue({
 				firstLine: '',
 				remark: '',
 				stroke: 12,
-				key: '',
+				key: 'C',
 				link: '',
 				lyrics: ''
 			},
@@ -3942,7 +3972,7 @@ var app = new Vue({
 				firstLine: '',
 				remark: '',
 				stroke: 12,
-				key: '',
+				key: 'G',
 				link: '',
 				lyrics: ''
 			},
@@ -3952,7 +3982,7 @@ var app = new Vue({
 				firstLine: '喔!主, 求你鑒察我',
 				remark: '',
 				stroke: 12,
-				key: '',
+				key: 'D',
 				link: '',
 				lyrics: ''
 			},
@@ -3962,7 +3992,7 @@ var app = new Vue({
 				firstLine: '普世歡騰 救主下降',
 				remark: '',
 				stroke: 12,
-				key: '',
+				key: 'D',
 				link: '',
 				lyrics: ''
 			},
@@ -3972,7 +4002,7 @@ var app = new Vue({
 				firstLine: '順服祢的揀選 非我選擇要去',
 				remark: '',
 				stroke: 12,
-				key: '',
+				key: 'F',
 				link: '',
 				lyrics: ''
 			},
@@ -3982,7 +4012,7 @@ var app = new Vue({
 				firstLine: '無論是住在 美麗的高山',
 				remark: '',
 				stroke: 12,
-				key: '',
+				key: 'D',
 				link: '',
 				lyrics: ''
 			},
@@ -3992,7 +4022,7 @@ var app = new Vue({
 				firstLine: '揚聲歡呼讚美稱頌我的王',
 				remark: '',
 				stroke: 12,
-				key: '',
+				key: 'G',
 				link: '',
 				lyrics: ''
 			},
@@ -4002,7 +4032,7 @@ var app = new Vue({
 				firstLine: '主祢是我最知心的朋友',
 				remark: '',
 				stroke: 12,
-				key: '',
+				key: 'D',
 				link: '',
 				lyrics: ''
 			},
@@ -4012,7 +4042,7 @@ var app = new Vue({
 				firstLine: '最美好曾遇上是您溫柔的接納',
 				remark: '',
 				stroke: 12,
-				key: '',
+				key: 'C',
 				link: '',
 				lyrics: ''
 			},
@@ -4022,7 +4052,7 @@ var app = new Vue({
 				firstLine: '願我的心讚頌我的主',
 				remark: '',
 				stroke: 12,
-				key: '',
+				key: 'G',
 				link: '',
 				lyrics: ''
 			},
@@ -4032,7 +4062,7 @@ var app = new Vue({
 				firstLine: '過去困於幽暗裡',
 				remark: '',
 				stroke: 12,
-				key: '',
+				key: 'D',
 				link: '',
 				lyrics: ''
 			},
@@ -4042,7 +4072,7 @@ var app = new Vue({
 				firstLine: '讚美我主 讚美我主為我預備',
 				remark: '',
 				stroke: 12,
-				key: '',
+				key: 'F',
 				link: '',
 				lyrics: ''
 			},
@@ -4052,7 +4082,7 @@ var app = new Vue({
 				firstLine: '當你走到無力繼續下去',
 				remark: '',
 				stroke: 13,
-				key: '',
+				key: 'F',
 				link: '',
 				lyrics: ''
 			},
@@ -4062,7 +4092,7 @@ var app = new Vue({
 				firstLine: '當聖靈在我的心 我要歌頌主',
 				remark: '',
 				stroke: 13,
-				key: 'G',
+				key: 'Em',
 				link: '',
 				lyrics: ''
 			},
@@ -4082,7 +4112,7 @@ var app = new Vue({
 				firstLine: '當祢臨近我 以祢恩手扶持我',
 				remark: '',
 				stroke: 13,
-				key: '',
+				key: 'D',
 				link: '',
 				lyrics: ''
 			},
@@ -4102,7 +4132,7 @@ var app = new Vue({
 				firstLine: '是救主的愛將我求贖',
 				remark: '',
 				stroke: 13,
-				key: '',
+				key: 'G',
 				link: '',
 				lyrics: ''
 			},
@@ -4112,7 +4142,7 @@ var app = new Vue({
 				firstLine: '感謝耶穌  因祢愛極深',
 				remark: '',
 				stroke: 13,
-				key: '',
+				key: 'D',
 				link: '',
 				lyrics: ''
 			},
@@ -4122,7 +4152,7 @@ var app = new Vue({
 				firstLine: '感謝天父',
 				remark: '',
 				stroke: 13,
-				key: '',
+				key: 'C',
 				link: '',
 				lyrics: ''
 			},
@@ -4132,7 +4162,7 @@ var app = new Vue({
 				firstLine: '來敬拜上帝 來讚美上帝',
 				remark: '',
 				stroke: 13,
-				key: '',
+				key: 'G',
 				link: '',
 				lyrics: ''
 			},
@@ -4142,7 +4172,7 @@ var app = new Vue({
 				firstLine: '',
 				remark: '',
 				stroke: 13,
-				key: '',
+				key: 'Em',
 				link: '',
 				lyrics: ''
 			},
@@ -4152,7 +4182,7 @@ var app = new Vue({
 				firstLine: '經由主寶血來到父面前',
 				remark: '',
 				stroke: 13,
-				key: '',
+				key: 'G',
 				link: '',
 				lyrics: ''
 			},
@@ -4162,7 +4192,7 @@ var app = new Vue({
 				firstLine: '你的腳步帶著我的腳步',
 				remark: '',
 				stroke: 13,
-				key: '',
+				key: 'C',
 				link: '',
 				lyrics: ''
 			},
@@ -4172,7 +4202,7 @@ var app = new Vue({
 				firstLine: '萬軍之神帶領向前行',
 				remark: '',
 				stroke: 13,
-				key: '',
+				key: 'C',
 				link: '',
 				lyrics: ''
 			},
@@ -4182,7 +4212,7 @@ var app = new Vue({
 				firstLine: '這稱我名下的殿 必成為萬國禱告的殿',
 				remark: '',
 				stroke: 13,
-				key: '',
+				key: 'E',
 				link: '',
 				lyrics: ''
 			},
@@ -4202,7 +4232,7 @@ var app = new Vue({
 				firstLine: '十字架上光茫 溫柔又慈祥',
 				remark: '',
 				stroke: 13,
-				key: '',
+				key: 'D',
 				link: '',
 				lyrics: ''
 			},
@@ -4212,7 +4242,7 @@ var app = new Vue({
 				firstLine: '常聽說世界愛沒長久',
 				remark: '',
 				stroke: 13,
-				key: '',
+				key: 'F',
 				link: '',
 				lyrics: ''
 			},
@@ -4222,7 +4252,7 @@ var app = new Vue({
 				firstLine: '',
 				remark: '',
 				stroke: 13,
-				key: '',
+				key: 'F',
 				link: '',
 				lyrics: ''
 			},
@@ -4232,7 +4262,7 @@ var app = new Vue({
 				firstLine: '基督降生為要拯救我',
 				remark: '',
 				stroke: 13,
-				key: '',
+				key: 'Em',
 				link: '',
 				lyrics: ''
 			},
@@ -4242,7 +4272,7 @@ var app = new Vue({
 				firstLine: '每一天渴望與你在愛中相遇',
 				remark: '',
 				stroke: 13,
-				key: '',
+				key: 'C',
 				link: '',
 				lyrics: ''
 			},
@@ -4252,7 +4282,7 @@ var app = new Vue({
 				firstLine: '願我變做光 光照予四方',
 				remark: '',
 				stroke: 13,
-				key: '',
+				key: 'C',
 				link: '',
 				lyrics: ''
 			},
@@ -4262,7 +4292,7 @@ var app = new Vue({
 				firstLine: '傳佳音到誠心禱告同祝福你好',
 				remark: '聖誕用',
 				stroke: 13,
-				key: '',
+				key: 'D',
 				link: '',
 				lyrics: ''
 			},
@@ -4272,7 +4302,7 @@ var app = new Vue({
 				firstLine: '來到祢的寶座前',
 				remark: '',
 				stroke: 13,
-				key: '',
+				key: 'A',
 				link: '',
 				lyrics: ''
 			},
@@ -4292,7 +4322,7 @@ var app = new Vue({
 				firstLine: '有敬拜的聲音發出',
 				remark: '',
 				stroke: 13,
-				key: '',
+				key: 'A',
 				link: '',
 				lyrics: ''
 			},
@@ -4302,7 +4332,7 @@ var app = new Vue({
 				firstLine: '祢是做新事的神',
 				remark: '',
 				stroke: 13,
-				key: '',
+				key: 'F',
 				link: '',
 				lyrics: ''
 			},
@@ -4312,7 +4342,7 @@ var app = new Vue({
 				firstLine: '聖潔主 至聖潔主',
 				remark: '',
 				stroke: 13,
-				key: '',
+				key: 'A',
 				link: '',
 				lyrics: ''
 			},
@@ -4322,7 +4352,7 @@ var app = new Vue({
 				firstLine: '聖靈請你來充滿在這地',
 				remark: '',
 				stroke: 13,
-				key: '',
+				key: 'C',
 				link: '',
 				lyrics: ''
 			},
@@ -4332,7 +4362,7 @@ var app = new Vue({
 				firstLine: '聖靈聖靈我感謝你',
 				remark: '',
 				stroke: 13,
-				key: '',
+				key: 'D',
 				link: '',
 				lyrics: ''
 			},
@@ -4342,7 +4372,7 @@ var app = new Vue({
 				firstLine: '全心歡欣膝敬拜頌讚你永活神',
 				remark: '',
 				stroke: 13,
-				key: '',
+				key: 'D',
 				link: '',
 				lyrics: ''
 			},
@@ -4362,7 +4392,7 @@ var app = new Vue({
 				firstLine: '頌讚主因祂的愛超出那高天',
 				remark: '',
 				stroke: 13,
-				key: '',
+				key: 'F',
 				link: '',
 				lyrics: ''
 			},
@@ -4372,7 +4402,7 @@ var app = new Vue({
 				firstLine: '清風輕吹天空掛著耀眼太陽',
 				remark: '',
 				stroke: 13,
-				key: '',
+				key: 'D',
 				link: '',
 				lyrics: ''
 			},
@@ -4382,7 +4412,7 @@ var app = new Vue({
 				firstLine: '感激基督帶領恩典賜予我未停',
 				remark: '',
 				stroke: 13,
-				key: '',
+				key: 'F',
 				link: '',
 				lyrics: ''
 			},
@@ -4392,7 +4422,7 @@ var app = new Vue({
 				firstLine: '頌讚歸於耶穌的聖名',
 				remark: '',
 				stroke: 13,
-				key: '',
+				key: 'F',
 				link: '',
 				lyrics: ''
 			},
@@ -4412,7 +4442,7 @@ var app = new Vue({
 				firstLine: '我無助的時候 祢給我力量',
 				remark: '',
 				stroke: 14,
-				key: '',
+				key: 'F',
 				link: '',
 				lyrics: ''
 			},
@@ -4422,7 +4452,7 @@ var app = new Vue({
 				firstLine: '',
 				remark: '',
 				stroke: 14,
-				key: '',
+				key: 'Bm',
 				link: '',
 				lyrics: ''
 			},
@@ -5086,7 +5116,7 @@ var app = new Vue({
 				link: '',
 				lyrics: ''
 			},
-		],	
+		],
 	},
 	methods: {
 		search(searchTerms) {
@@ -5113,6 +5143,11 @@ var app = new Vue({
 						// wordContains not matched
 						continue
 					}
+				}
+				
+				if (searchTerms.key && searchTerms.key != this.songs[i].key) {
+					// key not matched
+					continue
 				}
 				
 				this.filteredSongs.push(this.songs[i])

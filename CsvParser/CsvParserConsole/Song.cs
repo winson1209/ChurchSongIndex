@@ -1,4 +1,4 @@
-﻿namespace CsvParser
+﻿namespace CsvParserConsole
 {
     public class Song
     {
