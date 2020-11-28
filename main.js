@@ -227,6 +227,16 @@ var app = new Vue({
 				lyrics: ''
 			},
 			{
+				code: '1-Y0108',
+				name: '一生敬拜祢',
+				firstLine: '親愛耶穌，祢真愛我',
+				remark: '',
+				stroke: 1,
+				key: 'C',
+				link: '',
+				lyrics: ''
+			},
+			{
 				code: '2-S0101',
 				name: '十字架永是我的榮耀',
 				firstLine: '主我來就十字架',
@@ -239,7 +249,7 @@ var app = new Vue({
 			{
 				code: '2-S0102',
 				name: '十架背後',
-				firstLine: '凝望昂十架的背後',
+				firstLine: '凝望祢十架的背後',
 				remark: 'BY TTK',
 				stroke: 2,
 				key: 'D',
@@ -297,6 +307,16 @@ var app = new Vue({
 				lyrics: ''
 			},
 			{
+				code: '3-D0101',
+				name: '大山為我挪開',
+				firstLine: '雖然道路崎嶇，困難險阻',
+				remark: '',
+				stroke: 3,
+				key: 'E',
+				link: '',
+				lyrics: ''
+			},
+			{
 				code: '3-F0101',
 				name: '凡事都能做',
 				firstLine: '信是未曾看見',
@@ -319,7 +339,7 @@ var app = new Vue({
 			{
 				code: '3-G0101',
 				name: '工人的禱告',
-				firstLine: '獻上一生為昂而活',
+				firstLine: '獻上一生為祢而活',
 				remark: '',
 				stroke: 3,
 				key: 'G',
@@ -379,7 +399,7 @@ var app = new Vue({
 			{
 				code: '4-J0101',
 				name: '日日夜夜',
-				firstLine: '耶和華昂大榮耀降臨',
+				firstLine: '耶和華祢大榮耀降臨',
 				remark: '',
 				stroke: 4,
 				key: 'G',
@@ -457,6 +477,16 @@ var app = new Vue({
 				lyrics: ''
 			},
 			{
+				code: '4-T0107',
+				name: '天父必看顧你',
+				firstLine: '任遭何事不要驚怕',
+				remark: '',
+				stroke: 4,
+				key: 'A',
+				link: '',
+				lyrics: ''
+			},
+			{
 				code: '4-Z0101',
 				name: '中國早晨五點鍾',
 				firstLine: '中國早晨五點鍾',
@@ -473,6 +503,16 @@ var app = new Vue({
 				remark: '',
 				stroke: 5,
 				key: 'D',
+				link: '',
+				lyrics: ''
+			},
+			{
+				code: '5-C0102',
+				name: '充滿在這裡',
+				firstLine: '神的國度從天降下來',
+				remark: '',
+				stroke: 5,
+				key: 'A',
 				link: '',
 				lyrics: ''
 			},
@@ -499,7 +539,7 @@ var app = new Vue({
 			{
 				code: '5-F0101',
 				name: '付出的愛',
-				firstLine: '每當我想起昂寶貴十架',
+				firstLine: '每當我想起祢寶貴十架',
 				remark: '',
 				stroke: 5,
 				key: 'D',
@@ -538,8 +578,8 @@ var app = new Vue({
 			},
 			{
 				code: '5-J0102',
-				name: '主我們需要昂',
-				firstLine: '主，罪人需要昂',
+				name: '主我們需要祢',
+				firstLine: '主，罪人需要祢',
 				remark: '',
 				stroke: 5,
 				key: 'D',
@@ -558,8 +598,8 @@ var app = new Vue({
 			},
 			{
 				code: '5-J0104',
-				name: '主我敬拜昂',
-				firstLine: '主我敬拜昂',
+				name: '主我敬拜祢',
+				firstLine: '主我敬拜祢',
 				remark: '',
 				stroke: 5,
 				key: 'F',
@@ -569,7 +609,7 @@ var app = new Vue({
 			{
 				code: '5-J0105',
 				name: '主的慈愛',
-				firstLine: '主昂的慈愛比生命更好',
+				firstLine: '主祢的慈愛比生命更好',
 				remark: '',
 				stroke: 5,
 				key: 'F',
@@ -659,7 +699,7 @@ var app = new Vue({
 			{
 				code: '5-J0114',
 				name: '主恩夠用',
-				firstLine: '昂的恩典每天夠我用',
+				firstLine: '祢的恩典每天夠我用',
 				remark: '',
 				stroke: 5,
 				key: 'D',
@@ -768,8 +808,8 @@ var app = new Vue({
 			},
 			{
 				code: '5-J0125',
-				name: '主當我向昂跪下的時候',
-				firstLine: '主當我向昂跪下的時候',
+				name: '主當我向祢跪下的時候',
+				firstLine: '主當我向祢跪下的時候',
 				remark: '',
 				stroke: 5,
 				key: 'Bbm',
@@ -778,7 +818,7 @@ var app = new Vue({
 			},
 			{
 				code: '5-J0126',
-				name: '主昂是我力量',
+				name: '主祢是我力量',
 				firstLine: '我的詩歌 我的拯救',
 				remark: '',
 				stroke: 5,
@@ -808,8 +848,8 @@ var app = new Vue({
 			},
 			{
 				code: '5-J0129',
-				name: '主我跟昂走',
-				firstLine: '主我跟昂走',
+				name: '主我跟祢走',
+				firstLine: '主我跟祢走',
 				remark: '',
 				stroke: 5,
 				key: 'D',
@@ -838,8 +878,8 @@ var app = new Vue({
 			},
 			{
 				code: '5-J0132',
-				name: '主啊昂配得受讚美',
-				firstLine: '主啊昂配得受讚美',
+				name: '主啊祢配得受讚美',
+				firstLine: '主啊祢配得受讚美',
 				remark: '',
 				stroke: 5,
 				key: 'D',
@@ -878,8 +918,8 @@ var app = new Vue({
 			},
 			{
 				code: '5-J0136',
-				name: '主我心尋找昂',
-				firstLine: '主我心尋找昂',
+				name: '主我心尋找祢',
+				firstLine: '主我心尋找祢',
 				remark: '',
 				stroke: 5,
 				key: 'C',
@@ -937,9 +977,29 @@ var app = new Vue({
 				lyrics: ''
 			},
 			{
+				code: '5-J0142',
+				name: '主的愛',
+				firstLine: '願主的愛與你同在',
+				remark: '',
+				stroke: 5,
+				key: 'Dm',
+				link: '',
+				lyrics: ''
+			},
+			{
+				code: '5-J0143',
+				name: '主愛大能',
+				firstLine: '在你慈恩裏',
+				remark: '',
+				stroke: 5,
+				key: 'G',
+				link: '',
+				lyrics: ''
+			},
+			{
 				code: '5-J0201',
 				name: '只因愛',
-				firstLine: '昂的愛我怎猜透 捨尊降貴',
+				firstLine: '祢的愛我怎猜透 捨尊降貴',
 				remark: '',
 				stroke: 5,
 				key: 'G',
@@ -948,7 +1008,7 @@ var app = new Vue({
 			},
 			{
 				code: '5-J0202',
-				name: '只有昂永恆的主',
+				name: '只有祢永恆的主',
 				firstLine: '誰知心痛苦 誰解心裡憂',
 				remark: '',
 				stroke: 5,
@@ -963,6 +1023,16 @@ var app = new Vue({
 				remark: '',
 				stroke: 5,
 				key: 'Bb',
+				link: '',
+				lyrics: ''
+			},
+			{
+				code: '5-J0204',
+				name: '只要有祢在我左右',
+				firstLine: '開我的眼睛,讓我看到天使天軍',
+				remark: '',
+				stroke: 5,
+				key: 'G',
 				link: '',
 				lyrics: ''
 			},
@@ -987,9 +1057,19 @@ var app = new Vue({
 				lyrics: ''
 			},
 			{
+				code: '5-P0101',
+				name: '平安',
+				firstLine: '就算世界刮著狂風暴雨',
+				remark: '',
+				stroke: 5,
+				key: 'C',
+				link: '',
+				lyrics: ''
+			},
+			{
 				code: '5-S0101',
-				name: '生命在於昂',
-				firstLine: '我生命在於昂',
+				name: '生命在於祢',
+				firstLine: '我生命在於祢',
 				remark: '',
 				stroke: 5,
 				key: 'G',
@@ -1017,12 +1097,32 @@ var app = new Vue({
 				lyrics: ''
 			},
 			{
+				code: '5-S0104',
+				name: '生命活水充滿我',
+				firstLine: '在祢寶座前 是我藏身處',
+				remark: '',
+				stroke: 5,
+				key: 'E',
+				link: '',
+				lyrics: ''
+			},
+			{
 				code: '5-S0201',
 				name: '世界變',
 				firstLine: '天空的飛鳥不耕作也不收',
 				remark: '',
 				stroke: 5,
 				key: 'D',
+				link: '',
+				lyrics: ''
+			},
+			{
+				code: '5-T0101',
+				name: '他從高處伸手',
+				firstLine: '急難的時候，求告耶和華',
+				remark: '',
+				stroke: 5,
+				key: 'C',
 				link: '',
 				lyrics: ''
 			},
@@ -1053,6 +1153,16 @@ var app = new Vue({
 				remark: '',
 				stroke: 5,
 				key: 'D',
+				link: '',
+				lyrics: ''
+			},
+			{
+				code: '5-W0104',
+				name: '永遠不分離',
+				firstLine: '我要像一棵樹按時結果',
+				remark: '',
+				stroke: 5,
+				key: 'C',
 				link: '',
 				lyrics: ''
 			},
@@ -1179,7 +1289,7 @@ var app = new Vue({
 			{
 				code: '6-J0201',
 				name: '如鹿切慕溪水',
-				firstLine: '神啊我心切慕昂如鹿切慕溪水',
+				firstLine: '神啊我心切慕祢如鹿切慕溪水',
 				remark: '',
 				stroke: 6,
 				key: 'C',
@@ -1203,6 +1313,16 @@ var app = new Vue({
 				remark: '',
 				stroke: 6,
 				key: 'F',
+				link: '',
+				lyrics: ''
+			},
+			{
+				code: '6-J0204',
+				name: '如鷹展翅上騰',
+				firstLine: '神已聽見我的呼求',
+				remark: '',
+				stroke: 6,
+				key: 'Em',
 				link: '',
 				lyrics: ''
 			},
@@ -1268,7 +1388,7 @@ var app = new Vue({
 			},
 			{
 				code: '6-Q0104',
-				name: '全新的昂',
+				name: '全新的祢',
 				firstLine: '你說陰天代表你的心情',
 				remark: '',
 				stroke: 6,
@@ -1288,7 +1408,7 @@ var app = new Vue({
 			},
 			{
 				code: '6-Q0106',
-				name: '全因為昂',
+				name: '全因為祢',
 				firstLine: '常言道：人生像演戲',
 				remark: '',
 				stroke: 6,
@@ -1349,7 +1469,7 @@ var app = new Vue({
 			{
 				code: '6-T0104',
 				name: '同讚美耶穌得榮耀',
-				firstLine: '是昂寧下降凡塵',
+				firstLine: '是祢寧下降凡塵',
 				remark: '',
 				stroke: 6,
 				key: 'G',
@@ -1368,7 +1488,7 @@ var app = new Vue({
 			},
 			{
 				code: '6-W0102',
-				name: '回歸昂身邊',
+				name: '回歸祢身邊',
 				firstLine: '你誠然擔當憂患',
 				remark: '',
 				stroke: 6,
@@ -1379,7 +1499,7 @@ var app = new Vue({
 			{
 				code: '6-W0103',
 				name: '回家',
-				firstLine: '親愛耶穌,我感謝昂來到這世界',
+				firstLine: '親愛耶穌,我感謝祢來到這世界',
 				remark: '',
 				stroke: 6,
 				key: 'D',
@@ -1399,7 +1519,7 @@ var app = new Vue({
 			{
 				code: '6-Y0101',
 				name: '因主的名',
-				firstLine: '造物主 今高唱昂名字',
+				firstLine: '造物主 今高唱祢名字',
 				remark: '',
 				stroke: 6,
 				key: 'A',
@@ -1478,8 +1598,8 @@ var app = new Vue({
 			},
 			{
 				code: '6-Y0204',
-				name: '有昂我就有亮光',
-				firstLine: '有昂我就有亮光 有昂我就有方向',
+				name: '有祢我就有亮光',
+				firstLine: '有祢我就有亮光 有祢我就有方向',
 				remark: '',
 				stroke: 6,
 				key: 'A',
@@ -1548,8 +1668,8 @@ var app = new Vue({
 			},
 			{
 				code: '6-Z0106',
-				name: '在昂寶座前',
-				firstLine: '在昂寶座前 我獻上我的敬拜',
+				name: '在祢寶座前',
+				firstLine: '在祢寶座前 我獻上我的敬拜',
 				remark: '',
 				stroke: 6,
 				key: 'A',
@@ -1558,8 +1678,8 @@ var app = new Vue({
 			},
 			{
 				code: '6-Z0107',
-				name: '在昂手中',
-				firstLine: '耶和華我的神 昂是我的神',
+				name: '在祢手中',
+				firstLine: '耶和華我的神 祢是我的神',
 				remark: '',
 				stroke: 6,
 				key: 'F',
@@ -1669,7 +1789,7 @@ var app = new Vue({
 			{
 				code: '7-G0102',
 				name: '君王就在這裡',
-				firstLine: '聖潔耶穌昂寶座來這裡',
+				firstLine: '聖潔耶穌祢寶座來這裡',
 				remark: '',
 				stroke: 7,
 				key: 'Bb',
@@ -1689,7 +1809,7 @@ var app = new Vue({
 			{
 				code: '7-G0301',
 				name: '改寫我一生',
-				firstLine: '容我配看昂榮光',
+				firstLine: '容我配看祢榮光',
 				remark: 'BY TTK',
 				stroke: 7,
 				key: '',
@@ -1699,7 +1819,7 @@ var app = new Vue({
 			{
 				code: '7-G0401',
 				name: '更新我心意',
-				firstLine: '更新我心意 使我能像昂',
+				firstLine: '更新我心意 使我能像祢',
 				remark: '',
 				stroke: 7,
 				key: 'C',
@@ -1708,8 +1828,8 @@ var app = new Vue({
 			},
 			{
 				code: '7-G0402',
-				name: '更像昂',
-				firstLine: '我渴望更像昂',
+				name: '更像祢',
+				firstLine: '我渴望更像祢',
 				remark: '',
 				stroke: 7,
 				key: 'F',
@@ -1719,7 +1839,7 @@ var app = new Vue({
 			{
 				code: '7-H0101',
 				name: '何等恩典',
-				firstLine: '以真誠的心降服在昂面前',
+				firstLine: '以真誠的心降服在祢面前',
 				remark: '',
 				stroke: 7,
 				key: 'G',
@@ -1768,8 +1888,8 @@ var app = new Vue({
 			},
 			{
 				code: '7-K0105',
-				name: '求昂將我輕放於心上',
-				firstLine: '求昂將我輕放於心上',
+				name: '求祢將我輕放於心上',
+				firstLine: '求祢將我輕放於心上',
 				remark: '',
 				stroke: 7,
 				key: 'Em',
@@ -1779,10 +1899,30 @@ var app = new Vue({
 			{
 				code: '7-K0106',
 				name: '求主充滿我',
-				firstLine: '主我來尋求昂的面',
+				firstLine: '主我來尋求祢的面',
 				remark: '',
 				stroke: 7,
 				key: 'D',
+				link: '',
+				lyrics: ''
+			},
+			{
+				code: '7-K0107',
+				name: '求充滿這地',
+				firstLine: '喔主感謝祢',
+				remark: '',
+				stroke: 7,
+				key: 'E',
+				link: '',
+				lyrics: ''
+			},
+			{
+				code: '7-K0201',
+				name: '決心跟你',
+				firstLine: '來忘掉過去',
+				remark: '',
+				stroke: 7,
+				key: 'C',
 				link: '',
 				lyrics: ''
 			},
@@ -1799,7 +1939,7 @@ var app = new Vue({
 			{
 				code: '7-M0102',
 				name: '每天每刻獻上為你',
-				firstLine: '神昂聖潔, 當得尊貴',
+				firstLine: '神祢聖潔, 當得尊貴',
 				remark: '',
 				stroke: 7,
 				key: 'Em',
@@ -1818,8 +1958,8 @@ var app = new Vue({
 			},
 			{
 				code: '7-M0201',
-				name: '沒有昂那有我',
-				firstLine: '從來未試過將一生交托為昂真正活過',
+				name: '沒有祢那有我',
+				firstLine: '從來未試過將一生交托為祢真正活過',
 				remark: '',
 				stroke: 7,
 				key: 'A',
@@ -2018,8 +2158,8 @@ var app = new Vue({
 			},
 			{
 				code: '7-N0204',
-				name: '我要歌頌昂聖名',
-				firstLine: '我要歌頌昂聖名',
+				name: '我要歌頌祢聖名',
+				firstLine: '我要歌頌祢聖名',
 				remark: '',
 				stroke: 7,
 				key: 'A',
@@ -2078,8 +2218,8 @@ var app = new Vue({
 			},
 			{
 				code: '7-N0210',
-				name: '我心切切渴慕昂',
-				firstLine: '我心切切渴慕昂 乾旱疲乏無水之地',
+				name: '我心切切渴慕祢',
+				firstLine: '我心切切渴慕祢 乾旱疲乏無水之地',
 				remark: '',
 				stroke: 7,
 				key: 'D',
@@ -2098,8 +2238,8 @@ var app = new Vue({
 			},
 			{
 				code: '7-N0212',
-				name: '我以禱告來到昂跟前',
-				firstLine: '我以禱告來到昂跟前 我要尋求昂',
+				name: '我以禱告來到祢跟前',
+				firstLine: '我以禱告來到祢跟前 我要尋求祢',
 				remark: '',
 				stroke: 7,
 				key: 'A',
@@ -2108,7 +2248,7 @@ var app = new Vue({
 			},
 			{
 				code: '7-N0213',
-				name: '我用主的愛真誠愛昂',
+				name: '我用主的愛真誠愛祢',
 				firstLine: '我用主的愛真誠來愛你',
 				remark: '',
 				stroke: 7,
@@ -2139,7 +2279,7 @@ var app = new Vue({
 			{
 				code: '7-N0216',
 				name: '我的最愛',
-				firstLine: '我愛因昂已先愛我',
+				firstLine: '我愛因祢已先愛我',
 				remark: '',
 				stroke: 7,
 				key: 'A',
@@ -2319,7 +2459,7 @@ var app = new Vue({
 			{
 				code: '7-N0234',
 				name: '我願意',
-				firstLine: '神呀 是昂喜歡跟我相親',
+				firstLine: '神呀 是祢喜歡跟我相親',
 				remark: '',
 				stroke: 7,
 				key: 'E',
@@ -2369,7 +2509,7 @@ var app = new Vue({
 			{
 				code: '7-N0239',
 				name: '我渴望看見',
-				firstLine: '我們等候主不住尋求昂面',
+				firstLine: '我們等候主不住尋求祢面',
 				remark: '',
 				stroke: 7,
 				key: 'F',
@@ -2379,7 +2519,7 @@ var app = new Vue({
 			{
 				code: '7-N0240',
 				name: '我要看見',
-				firstLine: '求昂降下同在',
+				firstLine: '求祢降下同在',
 				remark: '',
 				stroke: 7,
 				key: 'C',
@@ -2409,7 +2549,7 @@ var app = new Vue({
 			{
 				code: '7-N0243',
 				name: '我們呼求',
-				firstLine: '主我們同心在昂面前',
+				firstLine: '主我們同心在祢面前',
 				remark: '',
 				stroke: 7,
 				key: 'A',
@@ -2449,7 +2589,37 @@ var app = new Vue({
 			{
 				code: '7-N0247',
 				name: '我向你禱告',
-				firstLine: '昂是我神是我的依傍',
+				firstLine: '祢是我神是我的依傍',
+				remark: '',
+				stroke: 7,
+				key: 'E',
+				link: '',
+				lyrics: ''
+			},
+			{
+				code: '7-N0248',
+				name: '我神真偉大',
+				firstLine: '尊貴榮耀君王',
+				remark: '',
+				stroke: 7,
+				key: 'A',
+				link: '',
+				lyrics: ''
+			},
+			{
+				code: '7-N0249',
+				name: '我要一生一世住在你聖殿',
+				firstLine: '主你是我亮光',
+				remark: '',
+				stroke: 7,
+				key: 'A',
+				link: '',
+				lyrics: ''
+			},
+			{
+				code: '7-N0250',
+				name: '我們一起禱告吧',
+				firstLine: '我們一起禱告吧',
 				remark: '',
 				stroke: 7,
 				key: 'E',
@@ -2488,11 +2658,21 @@ var app = new Vue({
 			},
 			{
 				code: '7-Z0301',
-				name: '住在昂裡面',
+				name: '住在祢裡面',
 				firstLine: '在乾旱無水之地我渴慕你',
 				remark: '',
 				stroke: 7,
 				key: 'D',
+				link: '',
+				lyrics: ''
+			},
+			{
+				code: '8-B0101',
+				name: '奔跑不放棄',
+				firstLine: '每個狂風暴雨裡',
+				remark: '',
+				stroke: 8,
+				key: 'F',
 				link: '',
 				lyrics: ''
 			},
@@ -2687,6 +2867,16 @@ var app = new Vue({
 				lyrics: ''
 			},
 			{
+				code: '9-G0101',
+				name: '降下祢大能',
+				firstLine: '降下祢大能',
+				remark: '',
+				stroke: 9,
+				key: 'D',
+				link: '',
+				lyrics: ''
+			},
+			{
 				code: '9-H0101',
 				name: '看見復興',
 				firstLine: '我們是你的百姓',
@@ -2708,7 +2898,7 @@ var app = new Vue({
 			},
 			{
 				code: '9-K0201',
-				name: '活著為要敬拜昂',
+				name: '活著為要敬拜祢',
 				firstLine: '開我的眼睛，讓我看見你',
 				remark: '',
 				stroke: 9,
@@ -2729,7 +2919,7 @@ var app = new Vue({
 			{
 				code: '9-K0203',
 				name: '活著是為我主',
-				firstLine: '活著是為我主 有昂是我一生的褔氣',
+				firstLine: '活著是為我主 有祢是我一生的褔氣',
 				remark: '',
 				stroke: 9,
 				key: 'A',
@@ -2838,7 +3028,7 @@ var app = new Vue({
 			},
 			{
 				code: '9-X0301',
-				name: '是昂聲音',
+				name: '是祢聲音',
 				firstLine: '我呼喚在期待',
 				remark: '',
 				stroke: 9,
@@ -2848,7 +3038,7 @@ var app = new Vue({
 			},
 			{
 				code: '9-X0302',
-				name: '是昂應許',
+				name: '是祢應許',
 				firstLine: '壓傷的蘆葦它不折斷',
 				remark: '',
 				stroke: 9,
@@ -2888,8 +3078,8 @@ var app = new Vue({
 			},
 			{
 				code: '9-Y0104',
-				name: '耶穌，昂的愛已溶化我心',
-				firstLine: '耶穌 耶穌 耶穌 昂愛已溶化我心',
+				name: '耶穌，祢的愛已溶化我心',
+				firstLine: '耶穌 耶穌 耶穌 祢愛已溶化我心',
 				remark: '',
 				stroke: 9,
 				key: 'Ab',
@@ -2948,8 +3138,8 @@ var app = new Vue({
 			},
 			{
 				code: '9-Y0110',
-				name: '耶穌謝謝昂的愛',
-				firstLine: '當我每感失落沒能力解決是昂令我得安慰',
+				name: '耶穌謝謝祢的愛',
+				firstLine: '當我每感失落沒能力解決是祢令我得安慰',
 				remark: '',
 				stroke: 9,
 				key: 'Eb',
@@ -3008,8 +3198,8 @@ var app = new Vue({
 			},
 			{
 				code: '9-Y0116',
-				name: '耶和華昂是我的神',
-				firstLine: '耶和華昂是我的神',
+				name: '耶和華祢是我的神',
+				firstLine: '耶和華祢是我的神',
 				remark: '',
 				stroke: 9,
 				key: 'D',
@@ -3057,6 +3247,16 @@ var app = new Vue({
 				lyrics: ''
 			},
 			{
+				code: '9-Y0121',
+				name: '耶穌我感謝祢',
+				firstLine: '當我軟弱祢沒有離場',
+				remark: '',
+				stroke: 9,
+				key: 'A',
+				link: '',
+				lyrics: ''
+			},
+			{
 				code: '9-Y0201',
 				name: '若你能看見',
 				firstLine: '如若你能看見藍天',
@@ -3073,6 +3273,16 @@ var app = new Vue({
 				remark: '',
 				stroke: 9,
 				key: 'E',
+				link: '',
+				lyrics: ''
+			},
+			{
+				code: '9-Y0401',
+				name: '幽谷之舞',
+				firstLine: '神你的光光照我',
+				remark: '',
+				stroke: 9,
+				key: 'C',
 				link: '',
 				lyrics: ''
 			},
@@ -3118,7 +3328,7 @@ var app = new Vue({
 			},
 			{
 				code: '10-C0202',
-				name: '除昂以外',
+				name: '除祢以外',
 				firstLine: '除你以外 在天上我還能有誰',
 				remark: '',
 				stroke: 10,
@@ -3168,8 +3378,8 @@ var app = new Vue({
 			},
 			{
 				code: '10-N0101',
-				name: '昂的愛',
-				firstLine: '讓我生命有著昂的愛',
+				name: '祢的愛',
+				firstLine: '讓我生命有著祢的愛',
 				remark: 'BY TTK',
 				stroke: 10,
 				key: '',
@@ -3178,8 +3388,8 @@ var app = new Vue({
 			},
 			{
 				code: '10-N0102',
-				name: '昂是王',
-				firstLine: '神昂極偉大',
+				name: '祢是王',
+				firstLine: '神祢極偉大',
 				remark: '',
 				stroke: 10,
 				key: 'G',
@@ -3188,7 +3398,7 @@ var app = new Vue({
 			},
 			{
 				code: '10-N0103',
-				name: '昂是君王',
+				name: '祢是君王',
 				firstLine: '沒有佩戴冠冕',
 				remark: '',
 				stroke: 10,
@@ -3198,8 +3408,8 @@ var app = new Vue({
 			},
 			{
 				code: '10-N0104',
-				name: '昂是我的主',
-				firstLine: '昂是我的主 昂是造我的主',
+				name: '祢是我的主',
+				firstLine: '祢是我的主 祢是造我的主',
 				remark: '',
 				stroke: 10,
 				key: 'Bb',
@@ -3208,7 +3418,7 @@ var app = new Vue({
 			},
 			{
 				code: '10-N0105',
-				name: '昂是我唯一',
+				name: '祢是我唯一',
 				firstLine: '是甚麼問是甚麼',
 				remark: '',
 				stroke: 10,
@@ -3218,8 +3428,8 @@ var app = new Vue({
 			},
 			{
 				code: '10-N0106',
-				name: '昂是神',
-				firstLine: '昂創造諸天 昂創造深海',
+				name: '祢是神',
+				firstLine: '祢創造諸天 祢創造深海',
 				remark: '',
 				stroke: 10,
 				key: 'Dm',
@@ -3228,7 +3438,7 @@ var app = new Vue({
 			},
 			{
 				code: '10-N0107',
-				name: '昂是彌賽亞',
+				name: '祢是彌賽亞',
 				firstLine: '頌讚主頌讚主高聲歡唱',
 				remark: '',
 				stroke: 10,
@@ -3238,7 +3448,7 @@ var app = new Vue({
 			},
 			{
 				code: '10-N0108',
-				name: '昂真偉大',
+				name: '祢真偉大',
 				firstLine: '我靈歌唱 讚美救主我神',
 				remark: '',
 				stroke: 10,
@@ -3248,8 +3458,8 @@ var app = new Vue({
 			},
 			{
 				code: '10-N0109',
-				name: '昂讓我生命改變',
-				firstLine: '昂恩典豐富極深厚',
+				name: '祢讓我生命改變',
+				firstLine: '祢恩典豐富極深厚',
 				remark: '',
 				stroke: 10,
 				key: 'E',
@@ -3258,8 +3468,8 @@ var app = new Vue({
 			},
 			{
 				code: '10-N0110',
-				name: '昂是聖潔',
-				firstLine: '耶穌昂是何等聖潔美麗',
+				name: '祢是聖潔',
+				firstLine: '耶穌祢是何等聖潔美麗',
 				remark: '',
 				stroke: 10,
 				key: 'F',
@@ -3268,8 +3478,8 @@ var app = new Vue({
 			},
 			{
 				code: '10-N0111',
-				name: '昂的同在',
-				firstLine: '主昂充滿在這地',
+				name: '祢的同在',
+				firstLine: '主祢充滿在這地',
 				remark: '',
 				stroke: 10,
 				key: 'F',
@@ -3278,7 +3488,7 @@ var app = new Vue({
 			},
 			{
 				code: '10-N0112',
-				name: '昂是配得',
+				name: '祢是配得',
 				firstLine: '聖哉聖哉全地唱',
 				remark: '',
 				stroke: 10,
@@ -3288,7 +3498,7 @@ var app = new Vue({
 			},
 			{
 				code: '10-N0113',
-				name: '昂以恩典為年歲的冠冕',
+				name: '祢以恩典為年歲的冠冕',
 				firstLine: '你以恩典為年歲的冠冕',
 				remark: '',
 				stroke: 10,
@@ -3298,11 +3508,71 @@ var app = new Vue({
 			},
 			{
 				code: '10-N0114',
-				name: '昂的話',
-				firstLine: '我將昂的話語深藏在我心',
+				name: '祢的話',
+				firstLine: '我將祢的話語深藏在我心',
 				remark: '',
 				stroke: 10,
 				key: 'E',
+				link: '',
+				lyrics: ''
+			},
+			{
+				code: '10-N0115',
+				name: '祢是我神',
+				firstLine: '請開我眼打開我心',
+				remark: '',
+				stroke: 10,
+				key: 'G',
+				link: '',
+				lyrics: ''
+			},
+			{
+				code: '10-N0116',
+				name: '祢的救恩',
+				firstLine: '黑夜籠罩似乎不見光',
+				remark: '',
+				stroke: 10,
+				key: 'F#m',
+				link: '',
+				lyrics: ''
+			},
+			{
+				code: '10-N0117',
+				name: '祢縫合了破碎心',
+				firstLine: '祢縫合了破碎心',
+				remark: '',
+				stroke: 10,
+				key: 'C',
+				link: '',
+				lyrics: ''
+			},
+			{
+				code: '10-N0118',
+				name: '祢的恩典夠我用',
+				firstLine: '物換星移幾十載',
+				remark: '',
+				stroke: 10,
+				key: 'D',
+				link: '',
+				lyrics: ''
+			},
+			{
+				code: '10-N0119',
+				name: '祢眼目必看顧這地',
+				firstLine: '大聲敬拜全心呼喊',
+				remark: '',
+				stroke: 10,
+				key: 'F',
+				link: '',
+				lyrics: ''
+			},
+			{
+				code: '10-N0120',
+				name: '祢的愛不離不棄',
+				firstLine: '沒有一個憂患',
+				remark: '',
+				stroke: 10,
+				key: 'A',
 				link: '',
 				lyrics: ''
 			},
@@ -3319,7 +3589,7 @@ var app = new Vue({
 			{
 				code: '10-N0301',
 				name: '能不能',
-				firstLine: '我屬於昂昂是我永遠的福分',
+				firstLine: '我屬於祢祢是我永遠的福分',
 				remark: '',
 				stroke: 10,
 				key: 'G',
@@ -3349,7 +3619,7 @@ var app = new Vue({
 			{
 				code: '10-S0102',
 				name: '神坐著為王',
-				firstLine: '神啊我要一心稱謝昂',
+				firstLine: '神啊我要一心稱謝祢',
 				remark: '',
 				stroke: 10,
 				key: 'E',
@@ -3398,7 +3668,7 @@ var app = new Vue({
 			},
 			{
 				code: '10-S0107',
-				name: '神啊頌讚歸昂',
+				name: '神啊頌讚歸祢',
 				firstLine: '榮耀歸於真神',
 				remark: '',
 				stroke: 10,
@@ -3437,9 +3707,19 @@ var app = new Vue({
 				lyrics: ''
 			},
 			{
+				code: '10-S0111',
+				name: '神是我這生供應者',
+				firstLine: '天空降下雨水',
+				remark: '',
+				stroke: 10,
+				key: 'E',
+				link: '',
+				lyrics: ''
+			},
+			{
 				code: '10-Y0101',
 				name: '原來日子多麼美',
-				firstLine: '容許我開口說我想見昂',
+				firstLine: '容許我開口說我想見祢',
 				remark: '',
 				stroke: 10,
 				key: 'D',
@@ -3529,7 +3809,7 @@ var app = new Vue({
 			{
 				code: '10-Z0103',
 				name: '真摯的愛',
-				firstLine: '主,都是因為昂的愛',
+				firstLine: '主,都是因為祢的愛',
 				remark: '',
 				stroke: 10,
 				key: 'F',
@@ -3548,7 +3828,7 @@ var app = new Vue({
 			},
 			{
 				code: '10-Z0202',
-				name: '祝福昂',
+				name: '祝福祢',
 				firstLine: '',
 				remark: '',
 				stroke: 10,
@@ -3597,12 +3877,52 @@ var app = new Vue({
 				lyrics: ''
 			},
 			{
+				code: '11-C0202',
+				name: '從早晨到夜晚',
+				firstLine: '早晨我睜開眼睛',
+				remark: '',
+				stroke: 11,
+				key: 'F',
+				link: '',
+				lyrics: ''
+			},
+			{
+				code: '11-C0203',
+				name: '從這代到那代',
+				firstLine: '要將榮耀能力',
+				remark: '',
+				stroke: 11,
+				key: 'E',
+				link: '',
+				lyrics: ''
+			},
+			{
 				code: '11-D0101',
 				name: '得勝大得勝屬於主',
 				firstLine: '得勝大得勝屬於主',
 				remark: '',
 				stroke: 11,
 				key: 'Em',
+				link: '',
+				lyrics: ''
+			},
+			{
+				code: '11-D0201',
+				name: '帶我進入',
+				firstLine: '我要以感謝的心進入你的門',
+				remark: '',
+				stroke: 11,
+				key: 'F',
+				link: '',
+				lyrics: ''
+			},
+			{
+				code: '11-D0202',
+				name: '帶我進入祢的同在',
+				firstLine: '萬軍耶和華',
+				remark: '',
+				stroke: 11,
+				key: 'F',
 				link: '',
 				lyrics: ''
 			},
@@ -3677,6 +3997,16 @@ var app = new Vue({
 				lyrics: ''
 			},
 			{
+				code: '11-P0201',
+				name: '陪我走過春夏秋冬',
+				firstLine: '風風雨雨的時候',
+				remark: '',
+				stroke: 11,
+				key: 'D',
+				link: '',
+				lyrics: ''
+			},
+			{
 				code: '11-S0101',
 				name: '常存讚美',
 				firstLine: '常存讚美 心中歡欣',
@@ -3707,6 +4037,16 @@ var app = new Vue({
 				lyrics: ''
 			},
 			{
+				code: '11-S0202',
+				name: '深深愛祢',
+				firstLine: '我生命中最渴望的一件事',
+				remark: '',
+				stroke: 11,
+				key: 'E',
+				link: '',
+				lyrics: ''
+			},
+			{
 				code: '11-T0101',
 				name: '陶造我生命',
 				firstLine: '神願你來陶造我',
@@ -3728,11 +4068,21 @@ var app = new Vue({
 			},
 			{
 				code: '11-W0201',
-				name: '惟獨昂(Jesus is Love)',
+				name: '惟獨祢(Jesus is Love)',
 				firstLine: '今天，盡是滿身傷痕',
 				remark: '',
 				stroke: 11,
 				key: 'A',
+				link: '',
+				lyrics: ''
+			},
+			{
+				code: '11-W0202',
+				name: '惟有主愛充滿在心',
+				firstLine: '惟有主愛充滿在心',
+				remark: '',
+				stroke: 11,
+				key: 'D',
 				link: '',
 				lyrics: ''
 			},
@@ -3749,7 +4099,7 @@ var app = new Vue({
 			{
 				code: '11-Z0102',
 				name: '這是完美',
-				firstLine: '靠近昂 靠近昂',
+				firstLine: '靠近祢 靠近祢',
 				remark: 'BY TTK',
 				stroke: 11,
 				key: 'F',
@@ -3838,7 +4188,7 @@ var app = new Vue({
 			},
 			{
 				code: '12-D0102',
-				name: '單單只為昂',
+				name: '單單只為祢',
 				firstLine: '主給我一個夢',
 				remark: '',
 				stroke: 12,
@@ -3849,7 +4199,7 @@ var app = new Vue({
 			{
 				code: '12-F0101',
 				name: '復興聖潔',
-				firstLine: '求昂復興我 心中的聖潔',
+				firstLine: '求祢復興我 心中的聖潔',
 				remark: '',
 				stroke: 12,
 				key: 'C',
@@ -3859,7 +4209,7 @@ var app = new Vue({
 			{
 				code: '12-G0101',
 				name: '揀選',
-				firstLine: '昂十字架的大能',
+				firstLine: '祢十字架的大能',
 				remark: '',
 				stroke: 12,
 				key: 'F',
@@ -3999,7 +4349,7 @@ var app = new Vue({
 			{
 				code: '12-S0101',
 				name: '順服',
-				firstLine: '順服昂的揀選 非我選擇要去',
+				firstLine: '順服祢的揀選 非我選擇要去',
 				remark: '',
 				stroke: 12,
 				key: 'F',
@@ -4029,7 +4379,7 @@ var app = new Vue({
 			{
 				code: '12-Z0101',
 				name: '最知心的朋友',
-				firstLine: '主昂是我最知心的朋友',
+				firstLine: '主祢是我最知心的朋友',
 				remark: '',
 				stroke: 12,
 				key: 'D',
@@ -4108,8 +4458,8 @@ var app = new Vue({
 			},
 			{
 				code: '13-D0104',
-				name: '當昂臨近我',
-				firstLine: '當昂臨近我 以昂恩手扶持我',
+				name: '當祢臨近我',
+				firstLine: '當祢臨近我 以祢恩手扶持我',
 				remark: '',
 				stroke: 13,
 				key: 'D',
@@ -4139,7 +4489,7 @@ var app = new Vue({
 			{
 				code: '13-G0102',
 				name: '感謝耶穌',
-				firstLine: '感謝耶穌  因昂愛極深',
+				firstLine: '感謝耶穌  因祢愛極深',
 				remark: '',
 				stroke: 13,
 				key: 'D',
@@ -4168,7 +4518,7 @@ var app = new Vue({
 			},
 			{
 				code: '13-G0301',
-				name: '跟昂走',
+				name: '跟祢走',
 				firstLine: '',
 				remark: '',
 				stroke: 13,
@@ -4299,7 +4649,7 @@ var app = new Vue({
 			{
 				code: '13-Q0201',
 				name: '慈繩愛索',
-				firstLine: '來到昂的寶座前',
+				firstLine: '來到祢的寶座前',
 				remark: '',
 				stroke: 13,
 				key: 'A',
@@ -4329,7 +4679,7 @@ var app = new Vue({
 			{
 				code: '13-S0103',
 				name: '新的事將要成就',
-				firstLine: '昂是做新事的神',
+				firstLine: '祢是做新事的神',
 				remark: '',
 				stroke: 13,
 				key: 'F',
@@ -4438,8 +4788,8 @@ var app = new Vue({
 			},
 			{
 				code: '14-G0101',
-				name: '緊緊抓住昂',
-				firstLine: '我無助的時候 昂給我力量',
+				name: '緊緊抓住祢',
+				firstLine: '我無助的時候 祢給我力量',
 				remark: '',
 				stroke: 14,
 				key: 'F',
@@ -4453,6 +4803,16 @@ var app = new Vue({
 				remark: '',
 				stroke: 14,
 				key: 'Bm',
+				link: '',
+				lyrics: ''
+			},
+			{
+				code: '14-K0101',
+				name: '傾倒',
+				firstLine: '打破這香膏在祢腳前',
+				remark: '',
+				stroke: 14,
+				key: 'A',
 				link: '',
 				lyrics: ''
 			},
@@ -4518,8 +4878,8 @@ var app = new Vue({
 			},
 			{
 				code: '14-W0104',
-				name: '榮耀歸與昂全能的神',
-				firstLine: '哦天父我們何等愛昂',
+				name: '榮耀歸與祢全能的神',
+				firstLine: '哦天父我們何等愛祢',
 				remark: '',
 				stroke: 14,
 				key: 'Bb',
@@ -4529,7 +4889,17 @@ var app = new Vue({
 			{
 				code: '14-W0105',
 				name: '榮耀耶穌',
-				firstLine: '昂是創造天地大主宰',
+				firstLine: '祢是創造天地大主宰',
+				remark: '',
+				stroke: 14,
+				key: 'F',
+				link: '',
+				lyrics: ''
+			},
+			{
+				code: '14-W0106',
+				name: '榮耀的呼召',
+				firstLine: '將自己獻上當作活祭',
 				remark: '',
 				stroke: 14,
 				key: 'F',
@@ -4607,6 +4977,16 @@ var app = new Vue({
 				lyrics: ''
 			},
 			{
+				code: '15-C0104',
+				name: '齊共去宣告',
+				firstLine: '齊共去宣告',
+				remark: '',
+				stroke: 15,
+				key: 'Dm',
+				link: '',
+				lyrics: ''
+			},
+			{
 				code: '15-C0201',
 				name: '請差遣我',
 				firstLine: '感慨﹗造物與尊貴',
@@ -4667,6 +5047,16 @@ var app = new Vue({
 				lyrics: ''
 			},
 			{
+				code: '15-S0201',
+				name: '數算主恩',
+				firstLine: '當你遇見苦難如同大波浪',
+				remark: '',
+				stroke: 15,
+				key: 'C',
+				link: '',
+				lyrics: ''
+			},
+			{
 				code: '16-C0101',
 				name: '親愛的聖靈',
 				firstLine: '親愛的聖靈',
@@ -4678,7 +5068,7 @@ var app = new Vue({
 			},
 			{
 				code: '16-C0102',
-				name: '親眼看見昂',
+				name: '親眼看見祢',
 				firstLine: '有你我生命不一樣',
 				remark: '',
 				stroke: 16,
@@ -4718,7 +5108,7 @@ var app = new Vue({
 			},
 			{
 				code: '16-J0102',
-				name: '靜候昂',
+				name: '靜候祢',
 				firstLine: '愁煩苦惱 我心傷痛',
 				remark: 'BY TTK',
 				stroke: 16,
@@ -4858,7 +5248,7 @@ var app = new Vue({
 			},
 			{
 				code: '19-Y0102',
-				name: '願昂平安',
+				name: '願祢平安',
 				firstLine: '願主看顧您 願平安歸於您',
 				remark: '',
 				stroke: 19,
@@ -4868,8 +5258,8 @@ var app = new Vue({
 			},
 			{
 				code: '19-Y0103',
-				name: '願昂崇高',
-				firstLine: '我要在萬民中稱謝昂',
+				name: '願祢崇高',
+				firstLine: '我要在萬民中稱謝祢',
 				remark: '',
 				stroke: 19,
 				key: '',
@@ -4889,7 +5279,7 @@ var app = new Vue({
 			{
 				code: '20-B0101',
 				name: '寶貴十架',
-				firstLine: '主耶穌 我感謝昂',
+				firstLine: '主耶穌 我感謝祢',
 				remark: '',
 				stroke: 20,
 				key: 'A',
@@ -4899,7 +5289,7 @@ var app = new Vue({
 			{
 				code: '20-H0101',
 				name: '獻上活祭',
-				firstLine: '我心切切渴慕昂主 我要緊緊跟隨你',
+				firstLine: '我心切切渴慕祢主 我要緊緊跟隨你',
 				remark: '',
 				stroke: 20,
 				key: 'F',
@@ -4979,7 +5369,7 @@ var app = new Vue({
 			{
 				code: '24-Y0102',
 				name: '讓我靈自由',
-				firstLine: '讓我靈自由 使我能敬拜昂',
+				firstLine: '讓我靈自由 使我能敬拜祢',
 				remark: '',
 				stroke: 24,
 				key: 'G',
@@ -4998,7 +5388,7 @@ var app = new Vue({
 			},
 			{
 				code: '24-Y0104',
-				name: '讓昂大能改變我',
+				name: '讓祢大能改變我',
 				firstLine: '願聖靈此刻充滿我',
 				remark: '',
 				stroke: 24,
@@ -5008,7 +5398,7 @@ var app = new Vue({
 			},
 			{
 				code: '24-Y0105',
-				name: '讓我親近昂',
+				name: '讓我親近祢',
 				firstLine: '渴望能遇見你，渴望能親近你',
 				remark: '',
 				stroke: 24,
@@ -5028,8 +5418,8 @@ var app = new Vue({
 			},
 			{
 				code: '24-Y0107',
-				name: '讓我得見昂的榮面',
-				firstLine: '我的靈安靜在昂面前',
+				name: '讓我得見祢的榮面',
+				firstLine: '我的靈安靜在祢面前',
 				remark: '',
 				stroke: 24,
 				key: 'Bb',
@@ -5039,7 +5429,7 @@ var app = new Vue({
 			{
 				code: '24-Y0108',
 				name: '讓我',
-				firstLine: '昂用重價救贖我',
+				firstLine: '祢用重價救贖我',
 				remark: '',
 				stroke: 24,
 				key: 'F',
@@ -5068,8 +5458,8 @@ var app = new Vue({
 			},
 			{
 				code: '26-Z0103',
-				name: '讚頌昂的愛',
-				firstLine: '願意讚頌昂的愛',
+				name: '讚頌祢的愛',
+				firstLine: '願意讚頌祢的愛',
 				remark: '',
 				stroke: 26,
 				key: 'F',
@@ -5089,10 +5479,20 @@ var app = new Vue({
 			{
 				code: 'E-H',
 				name: 'Hallelujah 讚美主',
-				firstLine: 'Hallelujahl 來同聲歡唱',
+				firstLine: 'Hallelujah 來同聲歡唱',
 				remark: '',
 				stroke: '',
 				key: 'G',
+				link: '',
+				lyrics: ''
+			},
+			{
+				code: 'E-H',
+				name: 'How Awesome You Are',
+				firstLine: '偉大奇妙神',
+				remark: '',
+				stroke: '',
+				key: 'B',
 				link: '',
 				lyrics: ''
 			},
@@ -5113,6 +5513,16 @@ var app = new Vue({
 				remark: '',
 				stroke: '',
 				key: 'F',
+				link: '',
+				lyrics: ''
+			},
+			{
+				code: 'E-T',
+				name: 'Take more of me',
+				firstLine: 'Take more of me',
+				remark: '',
+				stroke: '',
+				key: 'A',
 				link: '',
 				lyrics: ''
 			},
