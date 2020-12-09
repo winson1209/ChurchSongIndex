@@ -10,10 +10,10 @@
 		  function gtag(){dataLayer.push(arguments);}
 		  gtag('js', new Date());
 
-		  gtag('config', 'UA-181122397-1');
-		  gtag('event', 'custom_event2', {
-			device_name: 'Hello World'
+		  gtag('config', 'UA-181122397-1', {
+			'custom_map': {'dimension2': 'device_name'}
 		  });
+		  gtag('event', 'name_dimension', {'device_name': 'Hello world'});
 		</script>
 
 	</head>
