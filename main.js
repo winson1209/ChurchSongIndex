@@ -1,3 +1,22 @@
+Vue.component('menu-bar', {
+	template: `
+		<div class="menu">
+			<div class="menu-item">
+				<a href='index.html'>Home</a>
+			</div>
+			<div class="menu-item">
+				<a href='about.html'>About</a>
+			</div>
+		</div>
+	`,
+	data() {
+		return {
+		}
+	},
+	methods: {
+	},
+})
+
 Vue.component('filter-form', {
 	template: `
 		<form class="filter-form">
