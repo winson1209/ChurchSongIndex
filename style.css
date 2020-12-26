@@ -4,7 +4,17 @@ table, th, td {
 }
 
 table {
-	width: 100%;
+  width: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.no-wraps {
+  white-space: nowrap;
+  max-width: 100%;
 }
 
 .grid-container {
@@ -21,7 +31,7 @@ table {
   background-color: #4CAF50; /* Green */
   border: none;
   color: white;
-  padding: 15px 32px;
+  padding: 15px 15px;
   text-align: center;
   text-decoration: none;
   display: inline-block;

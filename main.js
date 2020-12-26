@@ -72,10 +72,10 @@ Vue.component('filter-form', {
 					</select>
 				</p>
 			</div>
-			<p>
+			<div class="grid-container">
 				<button type="button" class="button" @click="onSubmit">搜尋</button>
 				<button type="button" class="button" @click="onShowAll">顯示全部</button>
-			</p>
+			</div>
 		</form>
 	`,
 	data() {
@@ -127,15 +127,15 @@ Vue.component('filtered-list', {
 	template: `
 		<table>
 			<tr>
-				<th style="min-width:80px">Code</th>
-				<th style="min-width:250px">歌名</th>
-				<th style="width:60%">第一句</th>
+				<th>Code</th>
+				<th>歌名</th>
+				<th>第一句</th>
 				<th>調</th>
 				<th>Remark</th>
-				<th style="min-width:70px">歌名字數</th>
+				<th>歌名字數</th>
 			</tr>
 			<tr v-for="song in filteredResults" :key="song.code">
-				<td>{{ song.code }}</td>
+				<td class="no-wraps">{{ song.code }}</td>
 				<td>{{ song.name }}</td>
 				<td>{{ song.firstLine }}</td>
 				<td>{{ song.key }}</td>
